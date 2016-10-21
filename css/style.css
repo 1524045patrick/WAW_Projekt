@@ -1,3 +1,15 @@
 .navbar-default {
     background-color: aqua;
+    background-color: cadetblue;
+    color: black;
+}
+
+.navbar-brand > a {
+    color: black;
+    background-color: cadetblue;
+    box-sizing:
+}
+
+.nav.navbar-nav.navbar-right > li > a {
+    color: black;
 }
