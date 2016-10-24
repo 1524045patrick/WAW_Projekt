@@ -1,15 +1,27 @@
-.navbar-default {
-    background-color: aqua;
-    background-color: cadetblue;
+.dropdown-menu > li > a {
+    color: black;
+    background-color: white;
+    margin: 0, 0, 0, 0;
+    height: 30px;
+    width: 35px;
+}
+
+#avatarPic {
+    width: 30x;
+    height: 30px;
+}
+
+#schuleAvatar {
+    width: 30px;
+    height: 30px;
+}
+
+#testFarbe {
+    background: blue;
     color: black;
 }
 
-.navbar-brand > a {
-    color: black;
-    background-color: cadetblue;
-    box-sizing:
-}
-
-.nav.navbar-nav.navbar-right > li > a {
+#testFarbe2 {
+    background: blue;
     color: black;
 }

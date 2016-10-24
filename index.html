@@ -12,13 +12,17 @@
 <body>
     <!-- http://stackoverflow.com/questions/20721248/best-way-to-override-bootstrap-css -->
     <div class="navbar navbar-default navbar-fixed-top">
-        <div class="container"> <a href="#" class="navbar-brand">Schülerseite</a>
+        <div class="container"> <a href="#" id="navbar-top-left" class="navbar-brand" style="color: black;">Schülerseite</a>
+            <!-- INLINE STYLE MUSS WEG ! WIE? Spezifikation 110 - 50 und trotzdem nichts überschrieben -->
             <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
             <div class="collapse navbar-collapse navHeaderCollapse">
                 <!-- Sichtbar solange nicht mobile Ansicht -->
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a class="active" href="#">Home</a></li>
-                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profil <b class = "caret"></b></a>
+                    <li>
+                        <a class="active" href="#"><img class="img-circle" id="schuleAvatar" src="pics/schule.jpg"></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img id="avatarPic" src="pics/default_avatar.png" alt="Profilbild"> </img><b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Avatar ändern</a></li>
                             <li><a href="#">Schülerheft</a></li>
@@ -32,6 +36,8 @@
                 </ul>
             </div>
         </div>
+    </div>
+    </div>
     </div>
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
