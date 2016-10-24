@@ -11,28 +11,20 @@
 
 <body>
     <!-- http://stackoverflow.com/questions/20721248/best-way-to-override-bootstrap-css -->
-    <div class="navbar navbar-default navbar-fixed-top">
-        <div class="container"> <a href="#" id="navbar-top-left" class="navbar-brand" style="color: black;">Schülerseite</a>
-            <!-- INLINE STYLE MUSS WEG ! WIE? Spezifikation 110 - 50 und trotzdem nichts überschrieben -->
-            <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-            <div class="collapse navbar-collapse navHeaderCollapse">
-                <!-- Sichtbar solange nicht mobile Ansicht -->
-                <ul class="nav navbar-nav navbar-right">
+    <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand" href="#">KompetenzDings</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-menubuilder">
+                <ul class="nav navbar-nav navbar-left">
                     <li>
-                        <a class="active" href="#"><img class="img-circle" id="schuleAvatar" src="pics/schule.jpg"></a>
+                        <a href="#"><img class="img-rounded" id="schuleAvatar" src="pics/schule.jpg" alt="Schulinfos"></a>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img id="avatarPic" src="pics/default_avatar.png" alt="Profilbild"> </img><b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Avatar ändern</a></li>
-                            <li><a href="#">Schülerheft</a></li>
-                            <li><a href="#">Klasse</a></li>
-                            <li><a href="#">Profil löschen</a></li>
-                        </ul>
+                    <li>
+                        <a href="#"><img id="schuelerAvatar" src="pics/default_avatar1.jpg"></a>
                     </li>
-                    <li><a href="#">Schülerheft</a></li>
-                    <li><a href="#">WeißnichtMehr</a></li>
-                    <li><a href="#">IrgendwasWarNoch</a></li>
+                    <li><a href="#">About Us</a> </li>
                 </ul>
             </div>
         </div>
