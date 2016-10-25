@@ -8,7 +8,6 @@
     height: 30px;
 }
 
-// NAVBAR STYLE
 .navbar-brand {
     color: black;
 }
@@ -20,8 +19,6 @@
 #custom-bootstrap-menu.navbar-default {
     font-size: 14px;
     background-color: rgba(41, 122, 163, 1);
-    // background: -webkit-linear-gradient(top, rgba(248, 248, 248, 1) 0%, rgba(41, 122, 163, 1) 100%);
-    // background: linear-gradient(to bottom, rgba(248, 248, 248, 1) 0%, rgba(41, 122, 163, 1) 100%);
     border-width: 0px;
     border-radius: 0px;
 }
@@ -29,8 +26,6 @@
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
     color: rgba(0, 0, 0, 1);
     background-color: rgba(41, 122, 163, 1);
-    //background: -webkit-linear-gradient(top, rgba(248, 248, 248, 0) 0%, rgba(41, 122, 163, 1) 100%);
-    //background: linear-gradient(to bottom, rgba(248, 248, 248, 0) 0%, rgba(41, 122, 163, 1) 100%);
 }
 
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
@@ -63,4 +58,11 @@
     background-color: #297aa3;
 }
 
-//NAVBAR ENDE
+#checkslogan {
+    text-align: center;
+}
+#schuelerAvatarLogin {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
