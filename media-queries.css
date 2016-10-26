@@ -1,0 +1,8 @@
+@media only screen and (max-width:768px) {
+    #loginAvatar {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width:345px) {}

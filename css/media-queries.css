@@ -1,0 +1,10 @@
+@media only screen and (max-width:345px) {
+    #loginAvatar {
+        height: 30px;
+        width: 30px;
+        position: inherit;
+        vertical-align: middle;
+        border: 0px;
+        box-sizing: border-box;
+    }
+}
