@@ -88,3 +88,17 @@
 #loginTitle {
     text-align: center;
 }
+
+#loginButton {
+    width: 150px !important;
+    height: 40px !important;
+    align-self: center !important;
+    margin: 0 auto;
+    margin: 20px auto;
+}
+
+.form-control.loginData {
+    height: 40px auto;
+    width: 300px auto;
+    margin: 0 auto;
+}
