@@ -102,3 +102,14 @@
     width: 300px auto;
     margin: 0 auto;
 }
+
+#register {
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#registerlink {
+    text-decoration: underline;
+}
