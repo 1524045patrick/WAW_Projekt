@@ -1,18 +1,32 @@
-@media only screen and (max-width:345px) {
+@media only screen and (max-width:1200px) {
+    #emailinput {
+        width: 300px;
+        height: 40px;
+    }
+    #passwordinput {
+        width: 300px;
+        height: 40px;
+    }
     #loginAvatar {
-        height: 30px;
-        width: 30px;
-        /*position: inherit;
-        vertical-align: middle;
-        */
-        border: 0px;
-        box-sizing: border-box;
+        position: inherit;
+        height: 45px;
+        width: 45px;
     }
 }
 
 @media only screen and (max-width:360px) {
-    .account-wall {
-        height: 25px;
-        width: 25px;
+    #loginAvatar {
+        height: 30px;
+        width: 30px;
     }
+
+    #emailinput {
+	width: auto;
+        height: auto;
 }
+    #passwordinput {
+	width: auto;
+        height: auto;
+}
+}
+
