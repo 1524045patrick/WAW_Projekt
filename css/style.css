@@ -113,3 +113,78 @@
 #registerlink {
     text-decoration: underline;
 }
+
+.firstlistitem {
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#dasbinich .dropdown-menu li > a {
+    background-image: none;
+    background-color: #a1c153;
+}
+
+#dasbinich {
+    background-color: #79ab2e;
+}
+
+#ichunddieanderen:hover {
+    background-color: #dbe283;
+}
+
+#dieweltummichherum:hover {
+    background-color: #bad151;
+}
+
+#ichwerdeselbststaendig:hover {
+    background-color: #7cc3a3;
+}
+
+#sichbewegen:hover {
+    background-color: #ffea64;
+}
+
+#lernen:hover {
+    background-color: #fff3d8;
+}
+
+#arbeiten:hover {
+    background-color: #ffcf53;
+}
+
+#gestaltenunderschaffen:hover {
+    background-color: #f5a04c;
+}
+
+#sprachen:hover {
+    background-color: #e35184;
+}
+
+#fremdsprache:hover {
+    background-color: #ee7ba9;
+}
+
+#lesen:hover {
+    background-color: #f7bed2;
+}
+
+#schreiben:hover {
+    background-color: #c9427e;
+}
+
+#messen:hover {
+    background-color: #4fa8da;
+}
+
+#loesungenfinden:hover {
+    background-color: #94d3e5;
+}
+
+#zaehlenundrechnen:hover {
+    background-color: #005daa;
+}
+
+#formundraumentdecken:hover {
+    background-color: #658bc8;
+}
