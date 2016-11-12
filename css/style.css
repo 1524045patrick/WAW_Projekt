@@ -1,250 +1,387 @@
-#schuleAvatar {
-    width: 30px;
-    height: 30px;
-}
+        div.container.col-lg-12 h1 {
+            font-size: 10%em;
+            font-weight: bold;
+            font-style: italic;
+            letter-spacing: 5px;
+            color: #4f4f4f;
+            padding-bottom: 5px;
+        }
 
-#schuelerAvatar {
-    width: 30px;
-    height: 30px;
-}
+        div.dropdown {
+            font-family: Roboto;
+            font-size: 48px;
+            font-weight: bold;
+            margin-top: 0px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 0;
+        }
 
-.navbar-brand {
-    color: black;
-}
+        li.firstlistitem {
+            font-family: Roboto;
+            font-size: 1.3em;
+            padding-bottom: 20px;
+            margin: 5px;
+        }
 
-#custom-bootstrap-menu.navbar-default .navbar-brand {
-    color: rgba(0, 0, 0, 1);
-}
+        #schuleAvatar {
+            width: 30px;
+            height: 30px;
+        }
 
-#custom-bootstrap-menu.navbar-default {
-    font-size: 14px;
-    background-color: rgba(41, 122, 163, 1);
-    border-width: 0;
-    border-radius: 0;
-}
+        #schuelerAvatar {
+            width: 30px;
+            height: 30px;
+        }
 
-#custom-bootstrap-menu.navbar-default .navbar-nav > li > a {
-    color: rgba(0, 0, 0, 1);
-    background-color: rgba(41, 122, 163, 1);
-}
+        .navbar-brand {
+            color: black;
+        }
 
-#custom-bootstrap-menu.navbar-default .navbar-nav > li > a:hover,
-#custom-bootstrap-menu.navbar-default .navbar-nav > li > a:focus {
-    color: rgba(0, 0, 0, 1);
-    background-color: rgba(248, 248, 248, 0);
-}
+        #custom-bootstrap-menu.navbar-default .navbar-brand {
+            color: rgba(0, 0, 0, 1);
+        }
 
-#custom-bootstrap-menu.navbar-default .navbar-nav > .active > a,
-#custom-bootstrap-menu.navbar-default .navbar-nav > .active > a:hover,
-#custom-bootstrap-menu.navbar-default .navbar-nav > .active > a:focus {
-    color: rgba(0, 0, 0, 1);
-}
+        #custom-bootstrap-menu.navbar-default {
+            font-size: 14px;
+            background-color: rgba(41, 122, 163, 1);
+            border-width: 0;
+            border-radius: 0;
+        }
 
-#custom-bootstrap-menu.navbar-default .navbar-toggle {
-    border-color: #000;
-}
+        #custom-bootstrap-menu.navbar-default .navbar-nav > li > a {
+            color: rgba(0, 0, 0, 1);
+            background-color: rgba(41, 122, 163, 1);
+        }
 
-#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
-#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
-    background-color: #000;
-}
+        #custom-bootstrap-menu.navbar-default .navbar-nav > li > a:hover,
+        #custom-bootstrap-menu.navbar-default .navbar-nav > li > a:focus {
+            color: rgba(0, 0, 0, 1);
+            background-color: rgba(248, 248, 248, 0);
+        }
 
-#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
-    background-color: #000;
-}
+        #custom-bootstrap-menu.navbar-default .navbar-nav > .active > a,
+        #custom-bootstrap-menu.navbar-default .navbar-nav > .active > a:hover,
+        #custom-bootstrap-menu.navbar-default .navbar-nav > .active > a:focus {
+            color: rgba(0, 0, 0, 1);
+        }
 
-#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
-#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
-    background-color: #297aa3;
-}
+        #custom-bootstrap-menu.navbar-default .navbar-toggle {
+            border-color: #000;
+        }
 
-#loginAvatar {
-    position: inherit;
-    width: 50px;
-    height: 50px;
-}
+        #custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+        #custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+            background-color: #000;
+        }
 
-#loginBody,
-#loginHTML {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: table;
-}
+        #custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+            background-color: #000;
+        }
 
-#loginBody {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-}
+        #custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+        #custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+            background-color: #297aa3;
+        }
 
-#loginField {
-    display: table;
-    margin: auto;
-    float: inherit;
-}
+        #loginAvatar {
+            position: inherit;
+            width: 50px;
+            height: 50px;
+        }
 
-#loginTitle {
-    text-align: center;
-}
+        #loginBody,
+        #loginHTML {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: table;
+        }
 
-#loginButton {
-    width: 150px !important;
-    height: 40px !important;
-    align-self: center !important;
-    margin: 0 auto;
-    margin: 20px auto;
-}
+        #loginBody {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
 
-.form-control.loginData {
-    height: 40px auto;
-    width: 300px auto;
-    margin: 0 auto;
-}
+        #loginField {
+            display: table;
+            margin: auto;
+            float: inherit;
+        }
 
-#register {
-    text-align: center;
-    vertical-align: middle;
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
+        #loginTitle {
+            text-align: center;
+        }
 
-#registerlink {
-    text-decoration: underline;
-}
+        #loginButton {
+            width: 150px !important;
+            height: 40px !important;
+            align-self: center !important;
+            margin: 0 auto;
+            margin: 20px auto;
+        }
 
-.firstlistitem {
-    padding: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
+        .form-control.loginData {
+            height: 40px auto;
+            width: 300px auto;
+            margin: 0 auto;
+        }
 
-#dasbinich {
-    background-color: #79ab2e;
-}
+        #register {
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
 
-#dasbinich > a:hover {
-    background-color: #a1c153;
-}
+        #registerlink {
+            text-decoration: underline;
+        }
 
-#ichunddieanderen {
-    background-color: #c6d54f;
-}
+        .firstlistitem {
+            padding: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
 
-#ichunddieanderen > a:hover {
-    background-color: #dbe283;
-}
+        #dasbinich {
+            background-color: #79ab2e;
+        }
 
-#dieweltummichherum {
-    background-color: #94c122;
-}
+        #dasbinich > a:hover {
+            background-color: #a1c153;
+        }
 
-#dieweltummichherum > a:hover {
-    background-color: #bad151;
-}
+        #dasbinich a {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-family: Roboto;
+            font-size: 13px;
+        }
 
-#ichwerdeselbststaendig {
-    background-color: #44b284;
-}
+        #ichunddieanderen {
+            background-color: #c6d54f;
+        }
 
-#ichwerdeselbststaendig > a:hover {
-    background-color: #7cc3a3;
-}
+        #ichunddieanderen > a:hover {
+            background-color: #dbe283;
+        }
 
-#sichbewegen {
-    background-color: #ffdd00;
-}
+        #ichunddieanderen a {
+            padding-top: 13px;
+            padding-bottom: 13px;
+            font-family: Roboto;
+            font-size: 13px;
+        }
 
-#sichbewegen > a:hover  {
-    background-color: #ffea64;
-}
+        #dieweltummichherum {
+            background-color: #94c122;
+        }
 
-#lernen {
-    background-color: #ffed98;
-}
+        #dieweltummichherum > a:hover {
+            background-color: #bad151;
+        }
 
-#lernen > a:hover {
-    background-color: #fff3d8;
-}
+        #dieweltummichherum a {
+            padding-top: 13px;
+            padding-bottom: 13px;
+            font-family: Roboto;
+            font-size: 13px;
+        }
 
-#arbeiten {
-    background-color: #fbb900;
-}
+        #ichwerdeselbststaendig {
+            background-color: #44b284;
+        }
 
-#arbeiten > a:hover {
-    background-color: #ffcf53;
-}
+        #ichwerdeselbststaendig > a:hover {
+            background-color: #7cc3a3;
+        }
 
-#gestaltenunderschaffen {
-    background-color: #ef7d25;
-}
+        #ichwerdeselbststaendig a {
+            padding-top: 13px;
+            padding-bottom: 13px;
+            font-family: Roboto;
+            font-size: 13px;
+        }
 
-#gestaltenunderschaffen > a:hover  {
-    background-color: #f5a04c;
-}
+        #sichbewegen {
+            background-color: #ffdd00;
+        }
 
-#sprachen {
-    background-color: #d60d66;
-}
+        #sichbewegen > a:hover {
+            background-color: #ffea64;
+        }
 
-#sprachen > a:hover  {
-    background-color: #e35184;
-}
+        #sichbewegen a {
+            padding-top: 13px;
+            padding-bottom: 13px;
+            font-family: Roboto;
+            font-size: 13px;
+        }
 
-#fremdsprache {
-    background-color: #ea518d;
-}
+        #lernen {
+            background-color: #ffed98;
+        }
 
-#fremdsprache > a:hover  {
-    background-color: #ee7ba9;
-}
+        #lernen > a:hover {
+            background-color: #fff3d8;
+        }
 
-#lesen {
-    background-color: #f29db7;
-}
+        #lernen a {
+            padding-top: 13px;
+            padding-bottom: 13px;
+            font-family: Roboto;
+            font-size: 13px;
+        }
 
-#lesen > a:hover  {
-    background-color: #f7bed2;
-}
+        #arbeiten {
+            background-color: #fbb900;
+        }
 
-#schreiben {
-    background-color: #a62068;
-}
+        #arbeiten > a:hover {
+            background-color: #ffcf53;
+        }
 
-#schreiben > a:hover  {
-    background-color: #c9427e;
-}
+        #arbeiten a {
+            padding-top: 13px;
+            padding-bottom: 13px;
+            font-family: Roboto;
+            font-size: 13px;
+        }
 
-#messen {
-    background-color: #008fc8;
-}
+        #gestaltenunderschaffen {
+            background-color: #ef7d25;
+        }
 
-#messen > a:hover  {
-    background-color: #4fa8da;
-}
+        #gestaltenunderschaffen > a:hover {
+            background-color: #f5a04c;
+        }
 
-#loesungenfinden {
-    background-color: #62c2d0;
-}
+        #gestaltenunderschaffen a {
+            padding-top: 13px;
+            padding-bottom: 13px;
+            font-family: Roboto;
+            font-size: 13px;
+        }
 
-#loesungenfinden > a:hover  {
-    background-color: #94d3e5;
-}
+        #sprachen {
+            background-color: #d60d66;
+        }
 
-#zaehlenundrechnen {
-    background-color: #004077;
-}
+        #sprachen > a:hover {
+            background-color: #e35184;
+        }
 
-#zaehlenundrechnen > a:hover  {
-    background-color: #005daa;
-}
+        #sprachen a {
+            padding-top: 13px;
+            padding-bottom: 13px;
+            font-family: Roboto;
+            font-size: 13px;
+        }
 
-#formundraumentdecken {
-    background-color: #3873b9;
-}
+        #fremdsprache {
+            background-color: #ea518d;
+        }
 
-#formundraumentdecken > a:hover  {
-    background-color: #658bc8;
-}
+        #fremdsprache > a:hover {
+            background-color: #ee7ba9;
+        }
 
+        #fremdsprache a {
+            padding-top: 13px;
+            padding-bottom: 13px;
+            font-family: Roboto;
+            font-size: 13px;
+        }
+
+        #lesen {
+            background-color: #f29db7;
+        }
+
+        #lesen > a:hover {
+            background-color: #f7bed2;
+        }
+
+        #lesen a {
+            padding-top: 13px;
+            padding-bottom: 13px;
+            font-family: Roboto;
+            font-size: 13px;
+        }
+
+        #schreiben {
+            background-color: #a62068;
+        }
+
+        #schreiben > a:hover {
+            background-color: #c9427e;
+        }
+
+        #schreiben a {
+            padding-top: 13px;
+            padding-bottom: 13px;
+            font-family: Roboto;
+            font-size: 13px;
+        }
+
+        #messen {
+            background-color: #008fc8;
+        }
+
+        #messen > a:hover {
+            background-color: #4fa8da;
+        }
+
+        #messen a {
+            padding-top: 13px;
+            padding-bottom: 13px;
+            font-family: Roboto;
+            font-size: 13px;
+        }
+
+        #loesungenfinden {
+            background-color: #62c2d0;
+        }
+
+        #loesungenfinden > a:hover {
+            background-color: #94d3e5;
+        }
+
+        #loesungenfinden a {
+            padding-top: 13px;
+            padding-bottom: 13px;
+            font-family: Roboto;
+            font-size: 13px;
+        }
+
+        #zaehlenundrechnen {
+            background-color: #004077;
+        }
+
+        #zaehlenundrechnen > a:hover {
+            background-color: #005daa;
+        }
+
+        #zaehlenundrechnen a {
+            padding-top: 13px;
+            padding-bottom: 13px;
+            font-family: Roboto;
+            font-size: 13px;
+        }
+
+        #formundraumentdecken {
+            background-color: #3873b9;
+        }
+
+        #formundraumentdecken > a:hover {
+            background-color: #658bc8;
+        }
+
+        #formundraumentdecken a {
+            padding-top: 13px;
+            padding-bottom: 13px;
+            font-family: Roboto;
+            font-size: 13px;
+        }
