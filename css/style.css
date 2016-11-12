@@ -1,3 +1,7 @@
+body {
+    background: pink;
+}
+
 #schuleAvatar {
     width: 30px;
     height: 30px;
@@ -114,6 +118,11 @@
     text-decoration: underline;
 }
 
+.dropdown-menu {
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+}
 .firstlistitem {
     padding: 5px;
     padding-left: 20px;
@@ -121,6 +130,9 @@
 }
 
 #dasbinich {
+     border-color: white;
+    border-width: 3px;
+    border-style: solid;
     background-color: #79ab2e;
 }
 
@@ -129,6 +141,9 @@
 }
 
 #ichunddieanderen {
+     border-color: white;
+    border-width: 3px;
+    border-style: solid;
     background-color: #c6d54f;
 }
 
@@ -248,3 +263,36 @@
     background-color: #658bc8;
 }
 
+#mathezrbiszehn a{
+     color: #4565ad;
+    background-color: #001a3a;
+}
+
+#mathezrbiszehn > a:hover  {
+     color: white;
+    background-color: #4565ad;
+}
+
+#deutschsatzanfang a{
+    color: #4565ad;
+    background-color: #001a3a;
+}
+
+#deutschsatzanfang > a:hover  {
+    color: white;
+    background-color: #4565ad;
+}
+#sachkunde a{
+    color: #4565ad;
+    background-color: #001a3a;
+}
+
+#sachkunde > a:hover  {
+    color: white;
+    background-color: #4565ad;
+}
+
+.firstlistitem {
+    color: #4565ad;
+    background-color: #001a3a;
+}
