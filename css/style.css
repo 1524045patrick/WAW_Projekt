@@ -21,6 +21,15 @@ div.dropdown {
     padding-left: 0;
 }
 
+#testText {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 5px;
+    background-color: pink;
+}
+
 li.firstlistitem {
     font-family: Roboto;
     font-size: 1.3em;
@@ -76,7 +85,7 @@ li.firstlistitem {
 
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
-     background-color: #000;
+    background-color: #000;
 }
 
 #custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
@@ -390,33 +399,32 @@ li.firstlistitem {
     font-size: 13px;
 }
 
-
-
-#mathezrbiszehn a{
-     color: #4565ad;
-    background-color: #001a3a;
-}
-
-#mathezrbiszehn > a:hover  {
-     color: white;
-    background-color: #4565ad;
-}
-
-#deutschsatzanfang a{
+#mathezrbiszehn a {
     color: #4565ad;
     background-color: #001a3a;
 }
 
-#deutschsatzanfang > a:hover  {
+#mathezrbiszehn > a:hover {
     color: white;
     background-color: #4565ad;
 }
-#sachkunde a{
+
+#deutschsatzanfang a {
     color: #4565ad;
     background-color: #001a3a;
 }
 
-#sachkunde > a:hover  {
+#deutschsatzanfang > a:hover {
+    color: white;
+    background-color: #4565ad;
+}
+
+#sachkunde a {
+    color: #4565ad;
+    background-color: #001a3a;
+}
+
+#sachkunde > a:hover {
     color: white;
     background-color: #4565ad;
 }
@@ -425,16 +433,30 @@ li.firstlistitem {
     color: #4565ad;
     background-color: #001a3a;
 }
-
-
 
 .dropdown-menu {
     border-color: white;
     border-width: 3px;
     border-style: solid;
 }
+
 .firstlistitem {
     padding: 5px;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+nav.navbar.navbar-default.navbar-fixed-bottom {
+    font-family: Roboto;
+    font-weight: bold;
+    font-style: normal;
+    padding: 1.2em;
+    background-color: #00264b;
+}
+
+#headerBar {
+    background-color: #00264b;
+    font-family: Roboto;
+    font-weight: bold;
+    font-style: normal;
 }
