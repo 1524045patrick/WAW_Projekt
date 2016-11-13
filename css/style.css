@@ -1,4 +1,4 @@
-#main {
+body {
     background-color: pink;
 }
 
@@ -450,8 +450,12 @@ nav.navbar.navbar-default.navbar-fixed-bottom {
     font-family: Roboto;
     font-weight: bold;
     font-style: normal;
-    padding: 1.2em;
+    padding: 0.8em;
     background-color: #00264b;
+    text-align: center;
+    color: #4565ad;
+    height: 50px;
+
 }
 
 #headerBar {
@@ -459,4 +463,13 @@ nav.navbar.navbar-default.navbar-fixed-bottom {
     font-family: Roboto;
     font-weight: bold;
     font-style: normal;
+}
+
+#head{
+    font-size: 13px;
+     margin-top: 0.000008em;
+}
+
+#head2{
+    margin-bottom: 3em;
 }
