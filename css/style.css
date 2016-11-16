@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: black;
 }
 
 div.container.col-lg-12 h1 {
@@ -70,11 +70,26 @@ div.navbar.navbar-default {
     background-color: pink;
 }
 
-li.firstlistitem {
+li {
     font-family: Roboto;
-    font-size: 1.3em;
-    margin: 5px;
-    padding-bottom: 20px;
+    font-size: 13pt;
+    margin: 2px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+li>a{
+     color: white;
+}
+li>a:hover{
+     color: white;
+    text-decoration: none;
+}
+
+
+li.firstlistitem {
+   padding-bottom: 50px;
+   padding-top: 15px;
+   padding-left: 15px;
 }
 
 #schuleAvatar {
@@ -205,248 +220,165 @@ li.firstlistitem {
     background-color: #79ab2e;
 }
 
-#dasbinich > a:hover {
+#dasbinich:hover {
     background-color: #a1c153;
 }
 
-#dasbinich a {
-    font-family: Roboto;
-    font-size: 13px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
 
 #ichunddieanderen {
     background-color: #c6d54f;
 }
 
-#ichunddieanderen > a:hover {
+#ichunddieanderen:hover {
     background-color: #dbe283;
 }
 
-#ichunddieanderen a {
-    font-family: Roboto;
-    font-size: 13px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-}
 
 #dieweltummichherum {
     background-color: #94c122;
 }
 
-#dieweltummichherum > a:hover {
+#dieweltummichherum:hover {
     background-color: #bad151;
 }
 
-#dieweltummichherum a {
-    font-family: Roboto;
-    font-size: 13px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-}
+
 
 #ichwerdeselbststaendig {
     background-color: #44b284;
 }
 
-#ichwerdeselbststaendig > a:hover {
+#ichwerdeselbststaendig:hover {
     background-color: #7cc3a3;
 }
 
-#ichwerdeselbststaendig a {
-    font-family: Roboto;
-    font-size: 13px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-}
+
 
 #sichbewegen {
     background-color: #fd0;
 }
 
-#sichbewegen > a:hover {
+#sichbewegen:hover {
     background-color: #ffea64;
 }
 
-#sichbewegen a {
-    font-family: Roboto;
-    font-size: 13px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-}
+
 
 #lernen {
     background-color: #ffed98;
 }
 
-#lernen > a:hover {
+#lernen:hover {
     background-color: #fff3d8;
 }
 
-#lernen a {
-    font-family: Roboto;
-    font-size: 13px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-}
+
 
 #arbeiten {
     background-color: #fbb900;
 }
 
-#arbeiten > a:hover {
+#arbeiten:hover {
     background-color: #ffcf53;
 }
 
-#arbeiten a {
-    font-family: Roboto;
-    font-size: 13px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-}
+
 
 #gestaltenunderschaffen {
     background-color: #ef7d25;
 }
 
-#gestaltenunderschaffen > a:hover {
+#gestaltenunderschaffen:hover {
     background-color: #f5a04c;
 }
 
-#gestaltenunderschaffen a {
-    font-family: Roboto;
-    font-size: 13px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-}
 
 #sprachen {
     background-color: #d60d66;
 }
 
-#sprachen > a:hover {
+#sprachen:hover {
     background-color: #e35184;
 }
 
-#sprachen a {
-    font-family: Roboto;
-    font-size: 13px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-}
+
 
 #fremdsprache {
     background-color: #ea518d;
 }
 
-#fremdsprache > a:hover {
+#fremdsprache:hover {
     background-color: #ee7ba9;
 }
 
-#fremdsprache a {
-    font-family: Roboto;
-    font-size: 13px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-}
+
 
 #lesen {
     background-color: #f29db7;
 }
 
-#lesen > a:hover {
+#lesen:hover {
     background-color: #f7bed2;
 }
 
-#lesen a {
-    font-family: Roboto;
-    font-size: 13px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-}
+
 
 #schreiben {
     background-color: #a62068;
 }
 
-#schreiben > a:hover {
+#schreiben:hover {
     background-color: #c9427e;
 }
 
-#schreiben a {
-    font-family: Roboto;
-    font-size: 13px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-}
+
 
 #messen {
     background-color: #008fc8;
 }
 
-#messen > a:hover {
+#messen:hover {
     background-color: #4fa8da;
 }
 
-#messen a {
-    font-family: Roboto;
-    font-size: 13px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-}
+
 
 #loesungenfinden {
     background-color: #62c2d0;
 }
 
-#loesungenfinden > a:hover {
+#loesungenfinden:hover {
     background-color: #94d3e5;
 }
 
-#loesungenfinden a {
-    font-family: Roboto;
-    font-size: 13px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-}
+
 
 #zaehlenundrechnen {
     background-color: #004077;
 }
 
-#zaehlenundrechnen > a:hover {
+#zaehlenundrechnen:hover {
     background-color: #005daa;
 }
 
-#zaehlenundrechnen a {
-    font-family: Roboto;
-    font-size: 13px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-}
+
 
 #formundraumentdecken {
     background-color: #3873b9;
 }
 
-#formundraumentdecken > a:hover {
+#formundraumentdecken:hover {
     background-color: #658bc8;
 }
 
-#formundraumentdecken a {
-    font-family: Roboto;
-    font-size: 13px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-}
+
 
 #mathezrbiszehn a {
     color: #4565ad;
     background-color: #001a3a;
 }
 
-#mathezrbiszehn > a:hover {
+#mathezrbiszehn:hover {
     color: white;
     background-color: #4565ad;
 }
@@ -456,7 +388,7 @@ li.firstlistitem {
     background-color: #001a3a;
 }
 
-#deutschsatzanfang > a:hover {
+#deutschsatzanfang:hover {
     color: white;
     background-color: #4565ad;
 }
@@ -466,7 +398,7 @@ li.firstlistitem {
     background-color: #001a3a;
 }
 
-#sachkunde > a:hover {
+#sachkunde:hover {
     color: white;
     background-color: #4565ad;
 }
@@ -539,3 +471,24 @@ nav.navbar.navbar-default.navbar-fixed-bottom {
     font-size: 13 pt;
     text-transform:uppercase;
 }
+
+#DropdownUL{
+   padding: 0px;
+   margin-top: 15px;
+}
+
+#headerBar ul:before {
+     position: absolute;
+     content:"";
+     width: 20px;
+     height: 20px;
+     top: -5px;
+     left: 10px;
+     background: #001a3a;
+     -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+     -o-transform: rotate(45deg);
+     -ms-transform: rotate(45deg);
+     transform: rotate(45deg);
+}
+

@@ -83,3 +83,12 @@ WAS FEHLT?
 Navbar top + bot 
 folgen beide dem seitenverlauf?
 
+
+
+
+
+Jens&Markus
+Nicht zu vergessen:
+
+    Dropdown anklickbar nicht nur auf Hyperlink
+

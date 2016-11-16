@@ -1,0 +1,27 @@
+<html>
+<head></head>
+
+<script type="text/javascript">
+
+    pic1  = new Image();   pic1.src  = "pics/chapterOverview-inactive.png";
+    pic2  = new Image();   pic2.src  = "pics/chapterOverview-inactive.png"
+
+var a=1;
+
+function weiter(num)
+{
+    alert("hallo");
+    window.document.images[num].src = pic1;   //hier soll der Fehler sein
+++a;
+if (a>3) {a=1}
+}
+
+</script>
+
+<body bgcolor=black >
+<a href=javascript:onclick=weiter(1)> <img src="pics/chapterOverview-active.png"> </a>
+</body>
+</html>
+
+
+
