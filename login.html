@@ -28,9 +28,11 @@
                     <div id="accountwall" class="account-wall">
                         <div id="loginTitle" class="container col-lg-12">
                         <form class="form-signin">
-                            <input id="emailinput" type="text" class="form-control loginData" placeholder="Email" required autofocus>
-                            <input id="passwordinput" type="password" class="form-control loginData" placeholder="password" required>
-                            <button id="loginButton" class="btn btn-lg btn-success btn-block" type="submit"> Los! </button>
+                            <div id="inputFields">
+                           <input id="emailinput" type="text" class="form-control loginData" placeholder="BENUTZERNAME" required autofocus>
+                            <input id="passwordinput" type="password" class="form-control loginData" placeholder="PASSWORT" required min=7>
+                            </div>
+                            <button id="loginButton" class="btn btn-lg btn-success btn-block" type="submit" onclick=""> Los! </button>
                         </form>
                     </div>
                 </div>
@@ -38,13 +40,14 @@
         </div>
         <p id="register" class="col-xs-12 loginpagetext">Sie möchten mit CHECK! arbeiten?
             <br> <a id="registerlink" href="#">Jetzt registrieren.</a></p>
-        <div class="col-lg-12">
+        <div class="col-lg-12" id="footerText">
             <footer class="col-lg-12">
-                <h5>C H E C K !<br>
-                <img src="pics/achievedCompetences-big.png"  width="40" height="40" border="0">
+                <img src="pics/login/footer.png" style="padding: 5px">
                 <br>edition 2016 dark night blue 1.0
-                <br> CHECK! und CHECK! Lehrerzimmer sind Produkte des Raup&Ritter Verlag und der OnWerk Softwareagentur Mannheim
-                <br><a href="http://www.raupundritter.com">www.raupundritter.com </a>-<a href="#"> Kontakt </a>-<a href="#"> Impressum </a>-<a href="#"> Preise </a>-<a href="#"> Hilfe</a></footer>
+               <br> <p id="checkFooter">CHECK! und CHECK! Lehrerzimmer sind Produkte des Raup&Ritter Verlag und der OnWerk Softwareagentur Mannheim
+                <br><a href="http://www.raupundritter.com">www.raupundritter.com </a>-<a href="#"> Kontakt </a>-<a href="#"> Impressum </a>-<a href="#"> Preise </a>-<a href="#"> Hilfe</a>
+                </p>
+            </footer>
         </div>
     </div>
     <script src="js/jquery-1.11.1.min.js"></script>

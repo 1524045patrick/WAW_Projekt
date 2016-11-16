@@ -171,6 +171,7 @@ li.firstlistitem {
 #loginButton {
     width: 150px !important;
     height: 40px !important;
+    background-color: #001a3a;
     margin: 0 auto;
     margin: 20px auto;
     align-self: center !important;
@@ -187,6 +188,7 @@ li.firstlistitem {
     margin-bottom: 20px;
     text-align: center;
     vertical-align: middle;
+    color:#8da6d6;
 }
 
 #registerlink {
@@ -511,4 +513,29 @@ nav.navbar.navbar-default.navbar-fixed-bottom {
 
 #head2 {
     margin-bottom: 3em;
+}
+
+#checkFooter{
+    color:#8da6d6;
+    padding: 5px;
+}
+#checkFooter a{
+    color:#8da6d6;
+
+}
+#footerText{
+    font-family: Roboto;
+    font-size: 9pt;
+}
+
+#emailinput{
+    font-family: Roboto Thin;
+    margin: 5px auto;
+    font-size: 13 pt;
+   color: #001a3a;
+}
+#emailinput::-webkit-input-placeholder, #passwordinput::-webkit-input-placeholder {
+    color: #d3ddf2;
+    font-size: 13 pt;
+    text-transform:uppercase;
 }
