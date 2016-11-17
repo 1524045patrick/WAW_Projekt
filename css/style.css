@@ -68,18 +68,18 @@ div.navbar.navbar-default {
     background-color: pink;
 }
 
-li {
+#DropdownUL li {
     font-family: Roboto;
     font-size: 13pt;
     margin: 2px;
     padding-bottom: 10px;
     padding-top: 10px;
 }
-li>a{
-     color: white;
+#DropdownUL li>a{
+    color: white;
 }
-li>a:hover{
-     color: white;
+
+#DropdownUL li>a:hover{
     text-decoration: none;
 }
 
@@ -218,7 +218,7 @@ li.firstlistitem {
     background-color: #79ab2e;
 }
 
-#dasbinich:hover {
+#dasbinich:hover, #dasbinich>a:hover{
     background-color: #a1c153;
 }
 
@@ -227,7 +227,7 @@ li.firstlistitem {
     background-color: #c6d54f;
 }
 
-#ichunddieanderen:hover {
+#ichunddieanderen:hover,#ichunddieanderen>a:hover {
     background-color: #dbe283;
 }
 
@@ -236,7 +236,7 @@ li.firstlistitem {
     background-color: #94c122;
 }
 
-#dieweltummichherum:hover {
+#dieweltummichherum:hover,#dieweltummichherum>a:hover {
     background-color: #bad151;
 }
 
@@ -246,7 +246,7 @@ li.firstlistitem {
     background-color: #44b284;
 }
 
-#ichwerdeselbststaendig:hover {
+#ichwerdeselbststaendig:hover,#ichwerdeselbststaendig>a:hover {
     background-color: #7cc3a3;
 }
 
@@ -256,7 +256,7 @@ li.firstlistitem {
     background-color: #fd0;
 }
 
-#sichbewegen:hover {
+#sichbewegen:hover,#sichbewegen>a:hover {
     background-color: #ffea64;
 }
 
@@ -266,7 +266,7 @@ li.firstlistitem {
     background-color: #ffed98;
 }
 
-#lernen:hover {
+#lernen:hover,#lernen>a:hover {
     background-color: #fff3d8;
 }
 
@@ -276,7 +276,7 @@ li.firstlistitem {
     background-color: #fbb900;
 }
 
-#arbeiten:hover {
+#arbeiten:hover,#arbeiten>a:hover {
     background-color: #ffcf53;
 }
 
@@ -286,7 +286,7 @@ li.firstlistitem {
     background-color: #ef7d25;
 }
 
-#gestaltenunderschaffen:hover {
+#gestaltenunderschaffen:hover,#gestaltenunderschaffen>a:hover {
     background-color: #f5a04c;
 }
 
@@ -295,7 +295,7 @@ li.firstlistitem {
     background-color: #d60d66;
 }
 
-#sprachen:hover {
+#sprachen:hover,#sprachen>a:hover {
     background-color: #e35184;
 }
 
@@ -305,7 +305,7 @@ li.firstlistitem {
     background-color: #ea518d;
 }
 
-#fremdsprache:hover {
+#fremdsprache:hover,#fremdsprache>a:hover {
     background-color: #ee7ba9;
 }
 
@@ -315,7 +315,7 @@ li.firstlistitem {
     background-color: #f29db7;
 }
 
-#lesen:hover {
+#lesen:hover,#lesen>a:hover {
     background-color: #f7bed2;
 }
 
@@ -325,7 +325,7 @@ li.firstlistitem {
     background-color: #a62068;
 }
 
-#schreiben:hover {
+#schreiben:hover,#schreiben>a:hover {
     background-color: #c9427e;
 }
 
@@ -335,7 +335,7 @@ li.firstlistitem {
     background-color: #008fc8;
 }
 
-#messen:hover {
+#messen:hover,#messen>a:hover {
     background-color: #4fa8da;
 }
 
@@ -345,7 +345,7 @@ li.firstlistitem {
     background-color: #62c2d0;
 }
 
-#loesungenfinden:hover {
+#loesungenfinden:hover,#loesungenfinden>a:hover {
     background-color: #94d3e5;
 }
 
@@ -355,7 +355,7 @@ li.firstlistitem {
     background-color: #004077;
 }
 
-#zaehlenundrechnen:hover {
+#zaehlenundrechnen:hover,#zaehlenundrechnen>a:hover {
     background-color: #005daa;
 }
 
@@ -365,7 +365,7 @@ li.firstlistitem {
     background-color: #3873b9;
 }
 
-#formundraumentdecken:hover {
+#formundraumentdecken:hover,#formundraumentdecken>a:hover {
     background-color: #658bc8;
 }
 
@@ -376,7 +376,7 @@ li.firstlistitem {
     background-color: #001a3a;
 }
 
-#mathezrbiszehn:hover {
+#mathezrbiszehn:hover,#mathezrbiszehn>a:hover {
     color: white;
     background-color: #4565ad;
 }
@@ -386,7 +386,7 @@ li.firstlistitem {
     background-color: #001a3a;
 }
 
-#deutschsatzanfang:hover {
+#deutschsatzanfang:hover,#deutschsatzanfang>a:hover {
     color: white;
     background-color: #4565ad;
 }
@@ -396,7 +396,7 @@ li.firstlistitem {
     background-color: #001a3a;
 }
 
-#sachkunde:hover {
+#sachkunde:hover,#sachkunde>a:hover {
     color: white;
     background-color: #4565ad;
 }
@@ -406,17 +406,16 @@ li.firstlistitem {
     background-color: #001a3a;
 }
 
+#firstlistitemID{
+   margin-bottom: 20px;
+}
+
 .dropdown-menu {
     border-width: 3px;
     border-style: solid;
     border-color: white;
 }
 
-.firstlistitem {
-    padding: 5px;
-    padding-right: 20px;
-    padding-left: 20px;
-}
 
 nav.navbar.navbar-default.navbar-fixed-bottom {
     font-family: Roboto;
