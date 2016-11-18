@@ -68,18 +68,24 @@ div.navbar.navbar-default {
     background-color: pink;
 }
 
-#DropdownUL li {
+
+#firstlistitemID li{
+   margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.dropdown-menu li {
     font-family: Roboto;
     font-size: 13pt;
     margin: 2px;
     padding-bottom: 10px;
     padding-top: 10px;
 }
-#DropdownUL li>a{
+#DropdownUL1 li>a{
     color: white;
 }
 
-#DropdownUL li>a:hover{
+#DropdownUL1 li>a:hover{
     text-decoration: none;
 }
 
@@ -371,12 +377,15 @@ li.firstlistitem {
 
 
 
-#mathezrbiszehn a {
+#mathezrbiszehn a{
     color: #4565ad;
     background-color: #001a3a;
 }
+#mathezrbiszehn {
+    background-color: #001a3a;
+}
 
-#mathezrbiszehn:hover,#mathezrbiszehn>a:hover {
+#mathezrbiszehn:hover, #mathezrbiszehn>a:hover {
     color: white;
     background-color: #4565ad;
 }
@@ -406,9 +415,7 @@ li.firstlistitem {
     background-color: #001a3a;
 }
 
-#firstlistitemID{
-   margin-bottom: 20px;
-}
+
 
 .dropdown-menu {
     border-width: 3px;
@@ -488,4 +495,3 @@ nav.navbar.navbar-default.navbar-fixed-bottom {
      -ms-transform: rotate(45deg);
      transform: rotate(45deg);
 }
-
