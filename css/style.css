@@ -59,16 +59,6 @@ div.navbar.navbar-default {
     line-height: 1.33;
 }
 
-#testText {
-    font-family: Roboto;
-    font-size: 13px;
-    font-weight: bold;
-    margin: 10px;
-    padding: 5px;
-    background-color: pink;
-}
-
-
 #firstlistitemID li{
    margin-bottom: 20px;
     padding-bottom: 20px;
@@ -77,10 +67,22 @@ div.navbar.navbar-default {
 .dropdown-menu li {
     font-family: Roboto;
     font-size: 13pt;
-    margin: 2px;
-    padding-bottom: 10px;
+    margin: 3px;
+}
+
+.dropdown-menu {
+    border-width: 0px;
+    border-style: solid;
+    border-color: white;
+    padding: 0px;
+}
+
+.dropdown-menu li>a {
+   padding-bottom: 10px;
     padding-top: 10px;
 }
+
+
 #DropdownUL1 li>a{
     color: white;
 }
@@ -377,12 +379,11 @@ li.firstlistitem {
 
 
 
-#mathezrbiszehn a{
-    color: #4565ad;
-    background-color: #001a3a;
-}
 #mathezrbiszehn {
     background-color: #001a3a;
+}
+#mathezrbiszehn>a {
+    color: #4565ad;
 }
 
 #mathezrbiszehn:hover, #mathezrbiszehn>a:hover {
@@ -417,11 +418,7 @@ li.firstlistitem {
 
 
 
-.dropdown-menu {
-    border-width: 3px;
-    border-style: solid;
-    border-color: white;
-}
+
 
 
 nav.navbar.navbar-default.navbar-fixed-bottom {
@@ -481,17 +478,3 @@ nav.navbar.navbar-default.navbar-fixed-bottom {
    margin-top: 15px;
 }
 
-#headerBar ul:before {
-     position: absolute;
-     content:"";
-     width: 20px;
-     height: 20px;
-     top: -5px;
-     left: 10px;
-     background: #001a3a;
-     -webkit-transform: rotate(45deg);
-     -moz-transform: rotate(45deg);
-     -o-transform: rotate(45deg);
-     -ms-transform: rotate(45deg);
-     transform: rotate(45deg);
-}
