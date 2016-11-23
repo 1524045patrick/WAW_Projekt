@@ -1,14 +1,3 @@
-
-
-div.container.col-lg-12 h1 {
-    font-size: 10%em;
-    font-weight: bold;
-    font-style: italic;
-    padding-bottom: 5px;
-    letter-spacing: 5px;
-    color: #4f4f4f;
-}
-
 div.dropdown {
     font-family: Roboto;
     font-size: 48px;
@@ -19,48 +8,8 @@ div.dropdown {
     padding-left: 0;
 }
 
-div.dropdown > button.btn.btn-primary.btn-circle.dropdown-toggle {}
-
-div.navbar.navbar-default {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
-#headerNavbar {
-    margin: -8;
-    padding: 0;
-    border: 0;
-}
-
-.btn-circle {
-    width: 48px;
-    height: 48px;
-    text-align: center;
-    padding: 6px;
-    font-size: 12px;
-    line-height: 1.428571429;
-    border-radius: 50%;
-}
-
-.btn-circle.btn-lg {
-    width: 50px;
-    height: 50px;
-    padding: 10px 16px;
-    font-size: 18px;
-    line-height: 1.33;
-}
-
-.btn-circle.btn-xl {
-    width: 70px;
-    height: 70px;
-    padding: 10px 16px;
-    font-size: 24px;
-    line-height: 1.33;
-}
-
 #firstlistitemID li{
-   margin-bottom: 20px;
+    margin-bottom: 20px;
     padding-bottom: 20px;
 }
 
@@ -82,7 +31,6 @@ div.navbar.navbar-default {
     padding-top: 10px;
 }
 
-
 #DropdownUL1 li>a{
     color: white;
 }
@@ -91,71 +39,10 @@ div.navbar.navbar-default {
     text-decoration: none;
 }
 
-
 li.firstlistitem {
    padding-bottom: 50px;
    padding-top: 15px;
    padding-left: 15px;
-}
-
-#schuleAvatar {
-    width: 30px;
-    height: 30px;
-}
-
-#schuelerAvatar {
-    width: 30px;
-    height: 30px;
-}
-
-.navbar-brand {
-    color: black;
-}
-
-#custom-bootstrap-menu.navbar-default .navbar-brand {
-    color: rgba(0, 0, 0, 1);
-}
-
-#custom-bootstrap-menu.navbar-default {
-    font-size: 14px;
-    border-width: 0;
-    border-radius: 0;
-    background-color: rgba(41, 122, 163, 1);
-}
-
-#custom-bootstrap-menu.navbar-default .navbar-nav > li > a {
-    color: rgba(0, 0, 0, 1);
-    background-color: rgba(41, 122, 163, 1);
-}
-
-#custom-bootstrap-menu.navbar-default .navbar-nav > li > a:hover,
-#custom-bootstrap-menu.navbar-default .navbar-nav > li > a:focus {
-    color: rgba(0, 0, 0, 1);
-    background-color: rgba(248, 248, 248, 0);
-}
-
-#custom-bootstrap-menu.navbar-default .navbar-nav > .active > a,
-#custom-bootstrap-menu.navbar-default .navbar-nav > .active > a:hover,
-#custom-bootstrap-menu.navbar-default .navbar-nav > .active > a:focus {
-    color: rgba(0, 0, 0, 1);
-}
-
-#custom-bootstrap-menu.navbar-default .navbar-toggle {
-    border-color: #000;
-}
-
-#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
-#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
-    background-color: #000;
-}
-
-#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
-    background-color: #000;
-}
-
-#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
-#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
-    background-color: #297aa3;
 }
 
 #loginAvatar {
@@ -226,167 +113,140 @@ li.firstlistitem {
     background-color: #79ab2e;
 }
 
-#dasbinich:hover, #dasbinich>a:hover{
+#dasbinich>a:hover{
     background-color: #a1c153;
 }
-
 
 #ichunddieanderen {
     background-color: #c6d54f;
 }
 
-#ichunddieanderen:hover,#ichunddieanderen>a:hover {
+#ichunddieanderen>a:hover {
     background-color: #dbe283;
 }
-
 
 #dieweltummichherum {
     background-color: #94c122;
 }
 
-#dieweltummichherum:hover,#dieweltummichherum>a:hover {
+#dieweltummichherum>a:hover {
     background-color: #bad151;
 }
-
 
 
 #ichwerdeselbststaendig {
     background-color: #44b284;
 }
 
-#ichwerdeselbststaendig:hover,#ichwerdeselbststaendig>a:hover {
+#ichwerdeselbststaendig>a:hover {
     background-color: #7cc3a3;
 }
-
-
 
 #sichbewegen {
     background-color: #fd0;
 }
 
-#sichbewegen:hover,#sichbewegen>a:hover {
+#sichbewegen>a:hover {
     background-color: #ffea64;
 }
-
-
 
 #lernen {
     background-color: #ffed98;
 }
 
-#lernen:hover,#lernen>a:hover {
+#lernen>a:hover {
     background-color: #fff3d8;
 }
-
-
 
 #arbeiten {
     background-color: #fbb900;
 }
 
-#arbeiten:hover,#arbeiten>a:hover {
+#arbeiten>a:hover {
     background-color: #ffcf53;
 }
-
-
 
 #gestaltenunderschaffen {
     background-color: #ef7d25;
 }
 
-#gestaltenunderschaffen:hover,#gestaltenunderschaffen>a:hover {
+#gestaltenunderschaffen>a:hover {
     background-color: #f5a04c;
 }
-
 
 #sprachen {
     background-color: #d60d66;
 }
 
-#sprachen:hover,#sprachen>a:hover {
+#sprachen>a:hover {
     background-color: #e35184;
 }
-
-
 
 #fremdsprache {
     background-color: #ea518d;
 }
 
-#fremdsprache:hover,#fremdsprache>a:hover {
+#fremdsprache>a:hover {
     background-color: #ee7ba9;
 }
-
-
 
 #lesen {
     background-color: #f29db7;
 }
 
-#lesen:hover,#lesen>a:hover {
+#lesen>a:hover {
     background-color: #f7bed2;
 }
-
-
 
 #schreiben {
     background-color: #a62068;
 }
 
-#schreiben:hover,#schreiben>a:hover {
+#schreiben>a:hover {
     background-color: #c9427e;
 }
-
-
 
 #messen {
     background-color: #008fc8;
 }
 
-#messen:hover,#messen>a:hover {
+#messen>a:hover {
     background-color: #4fa8da;
 }
-
-
 
 #loesungenfinden {
     background-color: #62c2d0;
 }
 
-#loesungenfinden:hover,#loesungenfinden>a:hover {
+#loesungenfinden>a:hover {
     background-color: #94d3e5;
 }
-
-
 
 #zaehlenundrechnen {
     background-color: #004077;
 }
 
-#zaehlenundrechnen:hover,#zaehlenundrechnen>a:hover {
+#zaehlenundrechnen>a:hover {
     background-color: #005daa;
 }
-
-
 
 #formundraumentdecken {
     background-color: #3873b9;
 }
 
-#formundraumentdecken:hover,#formundraumentdecken>a:hover {
+#formundraumentdecken>a:hover {
     background-color: #658bc8;
 }
-
-
 
 #mathezrbiszehn {
     background-color: #001a3a;
 }
+
 #mathezrbiszehn>a {
     color: #4565ad;
 }
 
-#mathezrbiszehn:hover, #mathezrbiszehn>a:hover {
+#mathezrbiszehn>a:hover {
     color: white;
     background-color: #4565ad;
 }
@@ -396,7 +256,7 @@ li.firstlistitem {
     background-color: #001a3a;
 }
 
-#deutschsatzanfang:hover,#deutschsatzanfang>a:hover {
+#deutschsatzanfang>a:hover {
     color: white;
     background-color: #4565ad;
 }
@@ -406,7 +266,7 @@ li.firstlistitem {
     background-color: #001a3a;
 }
 
-#sachkunde:hover,#sachkunde>a:hover {
+#sachkunde>a:hover {
     color: white;
     background-color: #4565ad;
 }
@@ -415,11 +275,6 @@ li.firstlistitem {
     color: #4565ad;
     background-color: #001a3a;
 }
-
-
-
-
-
 
 nav.navbar.navbar-default.navbar-fixed-bottom {
     font-family: Roboto;
@@ -452,10 +307,12 @@ nav.navbar.navbar-default.navbar-fixed-bottom {
     color:#8da6d6;
     padding: 5px;
 }
+
 #checkFooter a{
     color:#8da6d6;
 
 }
+
 #footerText{
     font-family: Roboto;
     font-size: 9pt;
@@ -467,6 +324,7 @@ nav.navbar.navbar-default.navbar-fixed-bottom {
     font-size: 13 pt;
    color: #001a3a;
 }
+
 #emailinput::-webkit-input-placeholder, #passwordinput::-webkit-input-placeholder {
     color: #d3ddf2;
     font-size: 13 pt;
@@ -478,3 +336,20 @@ nav.navbar.navbar-default.navbar-fixed-bottom {
    margin-top: 15px;
 }
 
+#allekompetenzen{
+    background: #001a3a;
+}
+
+#allekompetenzen>a:hover {
+    color: white;
+    background-color: #4565ad;
+}
+
+#textneberbild{
+    padding-left: 50px;
+   text-align: justify;
+}
+
+#kontend{
+    font-size: 20px;
+}
