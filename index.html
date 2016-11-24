@@ -1,68 +1,38 @@
-<!DOCTYPE html>
-<html lang="de">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet"> </head>
-
+  <link rel="stylesheet" href="css/bootstrap.css">
+   <link href="css/styleIndex.css" rel="stylesheet">
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
 <body style="background:pink">
-    <!-- http://stackoverflow.com/questions/20721248/best-way-to-override-bootstrap-css -->
 
-        <div id="headerBar" class="container-fluid">
-        <div class="dropdown">
-            <span>
-                <img src="pics/chapterOverview-inactive.png" type="button" data-toggle="dropdown">
-                    <ul class="dropdown-menu" id="DropdownUL1">
-                    <!-- Bradon Grotesque Black 13pt, Violett FONT -->
-                        <li id="firstlistitemID" class="firstlistitem" >
-                            <p><img style="float:left" src="pics/confirmation.png" alt="#"></p>
-                            <p>CHECK! Kompetenzliste</p></li>
-                        <li id="dasbinich"><a href="#">DAS BIN ICH!</a></li>
-                        <li id="ichunddieanderen"><a href="#">ICH UND DIE ANDEREN</a></li>
-                        <li id="dieweltummichherum"><a href="#">DIE WELT UM MICH HERUM</a></li>
-                        <li id="ichwerdeselbststaendig"><a href="#">ICH WERDE SELBSTSTÄNDIG</a></li>
-                        <li id="sichbewegen"><a href="#">SICH BEWEGEN</a></li>
-                        <li id="lernen"><a href="#">LERNEN</a></li>
-                        <li id="arbeiten"><a href="#">ARBEITEN</a></li>
-                        <li id="gestaltenunderschaffen"><a href="#">GESTALTEN UND ERSCHAFFEN</a></li>
-                        <li id="sprachen"><a href="#">SPRECHEN</a></li>
-                        <li id="fremdsprache"><a href="#">FREMDSPRACHE</a></li>
-                        <li id="lesen"><a href="#">LESEN</a></li>
-                        <li id="schreiben"><a href="#">SCHREIBEN</a></li>
-                        <li id="messen"><a href="#">MESSEN</a></li>
-                        <li id="loesungenfinden"><a href="#">LÖSUNGEN FINDEN</a></li>
-                        <li id="zaehlenundrechnen"><a href="#">ZÄHLEN UND RECHNEN</a></li>
-                        <li id="formundraumentdecken"><a href="#">FORM UND RAUM ENTDECKEN</a></li>
-                    </ul>
-
-            </span>
-            <span>
-
-                <img src="pics/educationalPlan-inactive.png" type="button" data-toggle="dropdown">
-                    <ul class="dropdown-menu" id="DropdownUL2">
-                        <li class="firstlistitem">
-                            <p><img style="float:left" src="pics/educationalPlan-big.png" alt=""></p>
-                            <p> FÖRDERPLAN MATHE ZR BIS ZUR 10</p></li>
-                        <li id="mathezrbiszehn"><a href="#">MATHE ZR BIS 10</a></li>
-                        <li id="deutschsatzanfang"><a href="#">DEUTSCH SATZANFÄNGE</a></li>
-                        <li id="sachkunde"><a href="#">SACHKUNDE "DER WALD"</a></li>
-                    </ul>
-            </span>
-            <span>
-                <img src="pics/achievedCompetences-inactive.png" type="button" data-toggle="dropdown">
-                    <ul class="dropdown-menu" id="DropdownUL1">
-                    <!-- Bradon Grotesque Black 13pt, Violett FONT -->
-                        <li id="firstlistitemID" class="firstlistitem" >
-                                <p><img style="float:left" src="pics/achievedCompetences-big.png" alt="#">
-                            <p id="textneberbild">DASKANN<br>ICH<br>AMK</p>
-
-
+<nav id="navbarTop" class="navbar navbar-inverse navbar-static-top">
+  <div class="container-fluid">
+ <!-- Button Burger-Menü -->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarElements">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+<!-- Brand-Logo -->
+     <div class="brand-centered">
+        <a class="navbar-brand"><img src="pics/logo.png" alt="#"></a>
+     </div>
+<!-- Beide Dropdowns -->
+     <div id="navbarElements" class="navbar-collapse collapse">
+        <!-- Dropdown-left -->
+          <ul class="nav navbar-nav navbar-left">
+            <li class="dropdown">
+                <img src="pics/chapterOverview-inactive.png" class="dropdown-toggle" data-toggle="dropdown">
+                <ul class="dropdown-menu">
+                        <li class="firstlistitem" >
+                            <ul class="nav navbar-nav navbar-left">
+                                <li><img src="pics/confirmation.png" alt="#"></li>
+                                <li><p>CHECK!<br> Kompetenzliste</p></li>
+                            </ul>
                         </li>
-                        <li id="allekompetenzen" ><a href="#">ALLE KOMPETENZEN!</a></li>
                         <li id="dasbinich"><a href="#">DAS BIN ICH!</a></li>
                         <li id="ichunddieanderen"><a href="#">ICH UND DIE ANDEREN</a></li>
                         <li id="dieweltummichherum"><a href="#">DIE WELT UM MICH HERUM</a></li>
@@ -79,25 +49,106 @@
                         <li id="loesungenfinden"><a href="#">LÖSUNGEN FINDEN</a></li>
                         <li id="zaehlenundrechnen"><a href="#">ZÄHLEN UND RECHNEN</a></li>
                         <li id="formundraumentdecken"><a href="#">FORM UND RAUM ENTDECKEN</a></li>
-                    </ul>
+                </ul>
+            <li class="dropdown">
+                <img src="pics/educationalPlan-inactive.png" class="dropdown-toggle" data-toggle="dropdown">
+                <ul class="dropdown-menu">
+                    <li class="firstlistitem" >
+                            <ul class="nav navbar-nav navbar-left">
+                                <li><img src="pics/educationalPlan-big.png" alt=""></li>
+                                <li><p> FÖRDERPLAN<br>MATHE ZR BIS ZUR 10</p></li>
+                            </ul>
+                        </li>
+                    <li id="mathezrbiszehn"><a href="#">MATHE ZR BIS 10</a></li>
+                    <li id="deutschsatzanfang"><a href="#">DEUTSCH SATZANFÄNGE</a></li>
+                    <li id="sachkunde"><a href="#">SACHKUNDE "DER WALD"</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <img src="pics/achievedCompetences-inactive.png" class="dropdown-toggle" data-toggle="dropdown">
+                <ul class="dropdown-menu">
+                    <li class="firstlistitem" >
+                            <ul class="nav navbar-nav navbar-left">
+                                <li><img src="pics/achievedCompetences-big.png" alt="#"></li>
+                                <li><p>DAS<br>KANN<br>ICH!</p></li>
+                            </ul>
+                        </li>
+                    <li id="allekompetenzen" ><a href="#">ALLE KOMPETENZEN!</a></li>
+                    <li id="dasbinich"><a href="#">DAS BIN ICH!</a></li>
+                    <li id="ichunddieanderen"><a href="#">ICH UND DIE ANDEREN</a></li>
+                    <li id="dieweltummichherum"><a href="#">DIE WELT UM MICH HERUM</a></li>
+                    <li id="ichwerdeselbststaendig"><a href="#">ICH WERDE SELBSTSTÄNDIG</a></li>
+                    <li id="sichbewegen"><a href="#">SICH BEWEGEN</a></li>
+                    <li id="lernen"><a href="#">LERNEN</a></li>
+                    <li id="arbeiten"><a href="#">ARBEITEN</a></li>
+                    <li id="gestaltenunderschaffen"><a href="#">GESTALTEN UND ERSCHAFFEN</a></li>
+                    <li id="sprachen"><a href="#">SPRECHEN</a></li>
+                    <li id="fremdsprache"><a href="#">FREMDSPRACHE</a></li>
+                    <li id="lesen"><a href="#">LESEN</a></li>
+                    <li id="schreiben"><a href="#">SCHREIBEN</a></li>
+                    <li id="messen"><a href="#">MESSEN</a></li>
+                    <li id="loesungenfinden"><a href="#">LÖSUNGEN FINDEN</a></li>
+                    <li id="zaehlenundrechnen"><a href="#">ZÄHLEN UND RECHNEN</a></li>
+                    <li id="formundraumentdecken"><a href="#">FORM UND RAUM ENTDECKEN</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!-- Dropdown-right -->
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <img src="pics/achievedCompetences-inactive.png" class="dropdown-toggle" data-toggle="dropdown">
+                <ul class="dropdown-menu">
+                    <li><a href="#">Page 1-1</a></li>
+                    <li><a href="#">Page 1-2</a></li>
+                    <li><a href="#">Page 1-3</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <img src="pics/achievedCompetences-inactive.png" class="dropdown-toggle" data-toggle="dropdown">
+                <ul class="dropdown-menu">
+                    <li><a href="#">Page 1-1</a></li>
+                    <li><a href="#">Page 1-2</a></li>
+                    <li><a href="#">Page 1-3</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <img src="pics/achievedCompetences-inactive.png" class="dropdown-toggle" data-toggle="dropdown">
+                <ul class="dropdown-menu">
+                    <li><a href="#">Page 1-1</a></li>
+                    <li><a href="#">Page 1-2</a></li>
+                    <li><a href="#">Page 1-3</a></li>
+                </ul>
+            </li>
+            <!-- Strich -->
+            <li><hr noshade></li>
+            <li class="dropdown">
+                <img src="pics/achievedCompetences-inactive.png" class="dropdown-toggle" data-toggle="dropdown">
+                <ul class="dropdown-menu">
+                    <li><a href="#">Page 1-1</a></li>
+                    <li><a href="#">Page 1-2</a></li>
+                    <li><a href="#">Page 1-3</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <img src="pics/achievedCompetences-inactive.png" class="dropdown-toggle" data-toggle="dropdown">
+                <ul class="dropdown-menu">
+                    <li><a href="#">Page 1-1</a></li>
+                    <li><a href="#">Page 1-2</a></li>
+                    <li><a href="#">Page 1-3</a></li>
+                </ul>
+            </li>
+        </ul>
+      </div>
+  </div>
+</nav>
 
-            </span>
-        </div>
-
-    </div>
-
-    <div id="kontend">
-        <p>klingt gutss mal overwatch spielen</p>
-    </div>
-    <nav class="navbar navbar-default navbar-fixed-bottom">
+<nav id="navbarBottom" class="navbar navbar-default navbar-fixed-bottom">
             <div class="container">
-                <h1 id="head">CHECK!</h1>
-                <p id="head2">www.raupundritter.com</p>
+                <img src="pics/login/footer.png">
+                <p id="head2">edition 2016 dark night blue 1.0</p>
             </div>
         </nav>
-    <script src="js/js.js"></script>
-    <script src="js/jquery-1.11.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
 </body>
-
 </html>
+
+
