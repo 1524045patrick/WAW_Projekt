@@ -359,3 +359,6 @@ li.firstlistitem {
     font-size: 10pt;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
