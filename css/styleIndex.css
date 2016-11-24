@@ -1,3 +1,16 @@
+body {
+ background:pink;
+}
+#illustrationLeft{
+    margin-top: 45px;
+    float: left;
+}
+#illustrationRight{
+    margin-top: 45px;
+    float: right;
+}
+
+
 .navbar-brand {
   transform: translateX(-50%);
   left: 50%;
@@ -39,6 +52,7 @@ margin-top: 17px;
 
 #navbarElements .dropdown-menu{
    margin-top: 20px;
+   overflow: hidden;
 
 }
 
@@ -186,6 +200,7 @@ nav.navbar.navbar-default.navbar-fixed-bottom {
     background-color: #658bc8;
 }
 
+
 #mathezrbiszehn {
     background-color: #001a3a;
 }
@@ -265,3 +280,82 @@ li.firstlistitem {
 .firstlistitem p{
     padding-left: 5px;
 }
+.dropdown-toggle-chapterOverview:active,.open .dropdown-toggle-chapterOverview{
+    content: url("/pics/chapterOverview-active.png")
+}
+.dropdown-toggle-educationalPlan:active,.open .dropdown-toggle-educationalPlan{
+    content: url("/pics/educationalPlan-active.png")
+}
+.dropdown-toggle-achievedCompetences:active,.open .dropdown-toggle-achievedCompetences{
+    content: url("/pics/achievedCompetences-active.png")
+}
+.dropdown-toggle-profil:active,.open .dropdown-toggle-profil{
+    content: url("/pics/student/superhero-robin-active.png")
+}
+.dropdown-toggle-school:active,.open .dropdown-toggle-school{
+    content: url("/pics/school/school-green-active.png")
+}
+.dropdown-toggle-studyGroup:active,.open .dropdown-toggle-studyGroup{
+    content: url("/pics/studyGroup/studyGroup_1a_active.png")
+}
+.dropdown-toggle-help:active,.open .dropdown-toggle-help{
+    content: url("/pics/help-active.png")
+}
+.dropdown-toggle-logout:active,.open .dropdown-toggle-logout{
+    content: url("/pics/logout-active.png")
+}
+
+#dropdownBLAU{
+    background-color: #001a3a;
+}
+#dropdownBLAU a:hover{
+    background-color: #4565ad;
+    color: white;
+}
+#dropdownBLAU>a{
+    color: #4565ad;
+}
+
+#dropdownWEIS{
+    background-color: #001a3a;
+}
+#dropdownWEIS a:hover{
+    background-color: #4565ad;
+}
+#dropdownWEIS>a{
+    color: white;
+}
+
+#dropdownInfos{
+    background-color: #001a3a;
+    text-align: right;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color:white;
+    padding-right: 15px;
+}
+#dropdownInfosFirst{
+   height: 100px;
+    margin-bottom: 0px;
+}
+#dropdownInfosLast{
+    padding-right: 15px;
+    padding-bottom: 15px;
+    background-color: #001a3a;
+    text-align: right;
+    margin-bottom: 2px;
+    margin-top: 0px;
+    color:white;
+}
+
+#dropdownInfosLastName{
+    padding-right: 15px;
+    padding-bottom: 15px;
+    background-color: #001a3a;
+    text-align: right;
+    margin-bottom: 2px;
+    margin-top: 0px;
+    color:white;
+    font-size: 10pt;
+}
+
