@@ -55,10 +55,6 @@ hr{
 margin-top: 17px;
 }
 
-#navbarElements .dropdown-menu{
-   margin-top: 20px;
-}
-
 nav.navbar.navbar-default.navbar-fixed-bottom {
     font-family: Roboto;
     font-weight: bold;
@@ -412,6 +408,7 @@ ul.scroll-menu {
     border-radius: 0 !important;
 
     box-shadow: none;
+    margin-top: -5px;
 }
 ul.scroll-menu-2x {
     max-height: 230px;
@@ -419,4 +416,8 @@ ul.scroll-menu-2x {
 
 ::-webkit-scrollbar {
      display: none;
+}
+
+#topDrop{
+    margin-top: 20px;
 }
