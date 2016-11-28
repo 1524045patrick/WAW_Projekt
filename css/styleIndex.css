@@ -6,13 +6,11 @@ body {
 #illustrationLeft{
     margin-top: 80px;
     float: left;
-    position:fixed;
 }
+
 #illustrationRight{
     margin-top: 80px;
-    position: fixed;
-    left:1600px;
-
+    float: right;
 }
 
 .navbar-brand {
@@ -420,4 +418,20 @@ ul.scroll-menu-2x {
 
 #topDrop{
     margin-top: 20px;
+}
+
+#scrollButtonUp {
+    margin-top: 80px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+}
+
+#scrollButtonDown {
+    margin-bottom: 80px;
+    position: fixed;
+    bottom : 0;
+    right: 0;
+    margin-right: 20px;
 }
