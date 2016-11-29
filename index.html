@@ -28,8 +28,8 @@
           <ul class="nav navbar-nav navbar-left">
             <li class="dropdown">
                 <img src="pics/chapterOverview-inactive.png" class="dropdown-toggle-chapterOverview" data-toggle="dropdown">
-                <ul id="topDrop" class="dropdown-menu" role="menu">
-                        <li class="firstlistitem" >
+                <ul id="leftDrop" id="bla" class="dropdown-menu" role="menu">
+                        <li id="firstDropLeft"  class="firstlistitem" >
                             <ul class="nav navbar-nav navbar-left">
                                 <li><img src="pics/confirmation.png" alt="#"></li>
                                 <li><p>CHECK!<br> Kompetenzliste</p></li>
@@ -56,22 +56,24 @@
                 </ul>
             <li class="dropdown">
                 <img src="pics/educationalPlan-inactive.png" class="dropdown-toggle-educationalPlan" data-toggle="dropdown">
-                <ul id="topDrop" class="dropdown-menu">
-                    <li class="firstlistitem" >
+                <ul id="leftDrop" class="dropdown-menu">
+                    <li id="firstDropLeft" class="firstlistitem" >
                             <ul class="nav navbar-nav navbar-left">
                                 <li><img src="pics/educationalPlan-big.png" alt=""></li>
                                 <li><p> FÖRDERPLAN<br>MATHE ZR BIS ZUR 10</p></li>
                             </ul>
                         </li>
-                    <li id="dropdownBLAU"><a href="#">MATHE ZR BIS 10</a></li>
-                    <li id="dropdownBLAU"><a href="#">DEUTSCH SATZANFÄNGE</a></li>
-                    <li id="dropdownBLAU"><a href="#">SACHKUNDE "DER WALD"</a></li>
+                     <ul class="dropdown-menu scroll-menu">
+                        <li id="dropdownBLAU"><a href="#">MATHE ZR BIS 10</a></li>
+                        <li id="dropdownBLAU"><a href="#">DEUTSCH SATZANFÄNGE</a></li>
+                        <li id="dropdownBLAU"><a href="#">SACHKUNDE "DER WALD"</a></li>
+                    </ul>
                 </ul>
             </li>
             <li class="dropdown">
                 <img src="pics/achievedCompetences-inactive.png" class="dropdown-toggle-achievedCompetences" data-toggle="dropdown">
-                <ul id="topDrop" class="dropdown-menu">
-                    <li class="firstlistitem" >
+                <ul id="leftDrop" class="dropdown-menu">
+                    <li id="firstDropLeft" class="firstlistitem" >
                             <ul class="nav navbar-nav navbar-left">
                                 <li><img src="pics/achievedCompetences-big.png" alt="#"></li>
                                 <li><p>DAS<br>KANN<br>ICH!</p></li>
@@ -103,41 +105,47 @@
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
                 <img src="pics/student/superhero-robin-inactive.png" class="dropdown-toggle-profil" data-toggle="dropdown">
-                <ul id="topDrop" class="dropdown-menu">
-                    <li class="firstlistitem" id="dropdownInfosFirst" >
+                <ul id="rightDrop" class="dropdown-menu">
+                    <li class="firstlistitem firstDropRight" id="dropdownInfosFirst" >
                             <ul class="nav navbar-nav navbar-left">
                                 <li><img src="pics/student/superhero-robin-big-active.png" alt="#"></li>
                                 <li><p>Dein<br>Name</p></li>
                             </ul>
                         </li>
                     <li id="dropdownInfos"> Datumsdfgsdf</li>
-                    <li id="dropdownBLAU"><a href="#">MEIN PROFILBILD ÄNDERN</a></li>
-                    <li id="dropdownBLAU"><a href="#">MEIN PASSWORT ANDERN</a></li>
-                    <li id="dropdownBLAU"><a href="#">MEIN PROFIL LÖSCHEN</a></li>
+                     <ul class="dropdown-menu scroll-menu">
+
+                        <li id="dropdownBLAU"><a href="#">MEIN PROFILBILD ÄNDERN</a></li>
+                        <li id="dropdownBLAU"><a href="#">MEIN PASSWORT ANDERN</a></li>
+                        <li id="dropdownBLAU"><a href="#">MEIN PROFIL LÖSCHEN</a></li>
+                    </ul>
                 </ul>
             </li>
             <li class="dropdown">
                 <img src="pics/school/school-inactive.png" class="dropdown-toggle-school" data-toggle="dropdown">
-                <ul id="topDrop" class="dropdown-menu">
-                    <li class="firstlistitem" id="dropdownInfosFirst">
+                <ul id="rightDrop" class="dropdown-menu">
+                    <li class="firstlistitem firstDropRight" id="dropdownInfosFirst">
                         <ul class="nav navbar-nav navbar-left">
                                 <li><img src="pics/school/school-red-big-active.png" alt=""></li>
                                 <li id="dropdownBLAU"><p> ASTRID-<br>LINDEGREN-<br>SCHULE</p></li>
                     </ul>
                     </li>
-                    <li id="dropdownInfos">ADRESSE<br>PLZ ORT<br>LAND</li>
-                    <li id="dropdownInfosLast"><br>EMAIL<br>TELEFON</li>
+
+                        <li id="dropdownInfos">ADRESSE<br>PLZ ORT<br>LAND</li>
+                        <li id="dropdownInfosLast"><br>EMAIL<br>TELEFON</li>
+
                 </ul>
             </li>
             <li class="dropdown">
                 <img src="pics/studyGroup/studyGroup_1a_inactive.png" class="dropdown-toggle-studyGroup" data-toggle="dropdown">
-                <ul id="topDrop" class="dropdown-menu">
-                     <li class="firstlistitem" id="dropdownInfosFirst">
+                <ul id="rightDrop" class="dropdown-menu">
+                     <li class="firstlistitem firstDropRight" id="dropdownInfosFirst">
                         <ul class="nav navbar-nav navbar-left">
                                 <li><img src="pics/studyGroup/studyGroup_1a_active-big.png" alt=""></li>
                                 <li id="dropdownBLAU"><p> KLASSE<br>1A</p></li>
                     </ul>
                     </li>
+
                     <li id="dropdownInfos">KLASSENLEHRER*IN</li>
                     <li id="dropdownInfosLastName">Valerie Wildenmann</li>
                 </ul>
@@ -146,30 +154,34 @@
             <li><hr noshade></li>
             <li class="dropdown">
                 <img src="pics/help-inactive.png" class="dropdown-toggle-help" data-toggle="dropdown">
-                <ul id="topDrop" class="dropdown-menu">
-                    <li class="firstlistitem" >
+                <ul id="rightDrop" class="dropdown-menu">
+                    <li class="firstlistitem firstDropRight" >
                             <ul class="nav navbar-nav navbar-left">
                                 <li><img src="pics/help-big.png" alt="#"></li>
                                 <li><p>BRAUCHST<br>DU HILFE?</p></li>
                             </ul>
                         </li>
-                    <li id="dropdownWEIS"><a href="#">SO GEHT'S!</a></li>
-                    <li id="dropdownWEIS"><a href="#">VIDEO-TUTORIALS</a></li>
-                    <li id="dropdownWEIS"><a href="#">HÄUFIG GESTELLTE FRAGEN</a></li>
-                    <li id="dropdownWEIS"><a href="#">KONTAKT</a></li>
+                     <ul class="dropdown-menu scroll-menu">
+                        <li id="dropdownWEIS"><a href="#">SO GEHT'S!</a></li>
+                        <li id="dropdownWEIS"><a href="#">VIDEO-TUTORIALS</a></li>
+                        <li id="dropdownWEIS"><a href="#">HÄUFIG GESTELLTE FRAGEN</a></li>
+                        <li id="dropdownWEIS"><a href="#">KONTAKT</a></li>
+                    </ul>
                 </ul>
             </li>
             <li class="dropdown">
                 <img src="pics/logout-iactive.png" class="dropdown-toggle-logout" data-toggle="dropdown">
-                <ul id="topDrop" class="dropdown-menu">
-                    <li class="firstlistitem" >
+                <ul id="rightDrop" class="dropdown-menu">
+                    <li class="firstlistitem firstDropRight" >
                             <ul class="nav navbar-nav navbar-left">
                                 <li><img src="pics/logout-big.png" alt="#"></li>
                                 <li><p>MÖCHTEST DU<br>CHECK!<br>VERLASSEN?</p></li>
                             </ul>
                         </li>
-                    <li id="dropdownWEIS"><a href="#">JA</a></li>
-                    <li id="dropdownWEIS"><a href="#">NEIN</a></li>
+                     <ul class="dropdown-menu scroll-menu">
+                        <li id="dropdownWEIS"><a href="#">JA</a></li>
+                        <li id="dropdownWEIS"><a href="#">NEIN</a></li>
+                    </ul>
                 </ul>
             </li>
         </ul>
