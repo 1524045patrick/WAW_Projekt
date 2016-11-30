@@ -3,6 +3,7 @@ body {
     background:pink;
 }
 
+
 #illustrationLeft{
     margin-top: 80px;
     float: left;
@@ -242,15 +243,20 @@ nav.navbar.navbar-default.navbar-fixed-bottom {
     width: 300px;
     padding-top: 0px;
     padding-bottom: 0px;
-   border: 4px solid #fff;
+   border: 3px solid #fff;
 }
 
 ul.scroll-menu li{
-    margin: 2px;
+    margin: 3px;
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
 }
+.lastListItem{
+    margin-bottom: 0px !important; /* Weil nur klasse nicht reicht und ID ist vergeben*/
+}
+
+
 .dropdown-menu::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 4px;
@@ -517,7 +523,11 @@ ul.scroll-menu-2x {
 
 
 
-#profilLöschen{
+
+
+
+
+.changesDiv{
     margin-top: 100px;
     font-family: Franklin Gothic Heavy;
     font-size: 20pt;
@@ -525,6 +535,14 @@ ul.scroll-menu-2x {
     text-align: center;
 
 }
+.changesDiv p{
+    margin-top: 12px;
+}
+
+
+
+
+
 
 #loginButton {
     width: 150px;
@@ -535,21 +553,41 @@ ul.scroll-menu-2x {
 #passwordinput{
     width:300px;
     height: 40px;
-    margin: auto;
-}
-#inputFields{
-    color:#4565ad;
-    font-size: 13pt;
-    margin: 20px;
-}
-#profilLöschen p{
-    margin-top: 12px;
-    margin-bottom: 0px;
 }
 
-#bla{
-    position: absolute;
-    left: 20px;
-    top: 300px;
+#boxSeiten{
+    width: 190px;
+    display: inline-block;
+    font-size: 11pt;
+    color:#8da6d6;
+    text-align: right;
+    margin-right: 30px;
+
+}
+#boxMittig{
+    width: 300px;
+    display: inline-block;
+}
+
+
+
+#passwordinput{
+    border: 2px solid #8da6d6;
+    border-radius: 6px;
+}
+
+#buttonsFloat{
+     display: inline-block;
+}
+#abbrechenButton {
+    width: 150px;
+    height: 40px;
+    background-color: #8da6d6;
+    margin: 20px auto;
+    color:#4565ad;
+}
+
+.pictures img{
+    margin: 5px;
 }
 
