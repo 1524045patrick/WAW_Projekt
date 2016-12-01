@@ -1,13 +1,13 @@
 body {
     height: 100%;
-    background:pink;
+    background:white;
 }
 
 @media screen and (max-width: 767px) {
     body{
         background-color: white;
     }
-    #illustrationRight,#illustrationLeft, #scrollButtonUp, #scrollButtonDown, #footer, #rightDrop:after,#rightDrop:before, .firstDropRight:after,.firstDropRight:before, #leftDrop:after, #leftDrop:before, .firstDropLeft:after, .firstDropLeft:before, #trennbalken, .firstlistitem, .navbar-brand  {
+    #illustrationRight,#illustrationLeft, #scrollButtonUp, #scrollButtonDown, #footer, #rightDrop:after,#rightDrop:before, .firstDropRight:after,.firstDropRight:before, #leftDrop:after, #leftDrop:before, .firstDropLeft:after, .firstDropLeft:before, #trennbalken, .firstlistitem, .navbar-brand, .flag  {
         display: none;
     }
     #burgerTextBild{
@@ -52,6 +52,11 @@ body {
     .dropdown-menu{
         margin-top: 4px !important;
     }
+    #dropdownInfos, #dropdownInfosLast, #dropdownInfosLastName{
+        text-align: left !important;
+        padding-left: 10px;
+    }
+
 
 
 }
@@ -84,13 +89,16 @@ body {
 
 
 #illustrationLeft{
-    margin-top: 80px;
+    margin-top: 104px;
     float: left;
+
 }
 
 #illustrationRight{
-    margin-top: 80px;
+    margin-top: 104px;
     float: right;
+    margin-right: 20px;
+
 }
 
 .navbar-brand {
@@ -584,19 +592,19 @@ ul.scroll-menu-2x {
 }
 
 #scrollButtonUp {
-    margin-top: 80px;
+    margin-top: 70px;
     position: fixed;
     top: 0;
     right: 0;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 #scrollButtonDown {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     position: fixed;
     bottom : 0;
     right: 0;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 
@@ -668,5 +676,13 @@ ul.scroll-menu-2x {
 
 .pictures img{
     margin: 5px;
+}
+.flag{
+    position: absolute;
+    z-index: 1;
+    margin-top: 60px;
+    float: left;
+
+
 }
 
