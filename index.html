@@ -1,6 +1,8 @@
 <html>
 <head>
+    <meta name="viewport" content="width=device-width" />
    <link rel="stylesheet" href="css/bootstrap.css">
+
    <link href="css/styleIndex.css" rel="stylesheet">
    <script src="js/jquery-3.1.1.min.js"></script>
    <script src="js/bootstrap.min.js"></script>
@@ -28,9 +30,9 @@
         <!-- Dropdown-left -->
           <ul class="nav navbar-nav navbar-left">
             <li class="dropdown">
-                <img src="pics/chapterOverview-inactive.png" class="dropdown-toggle-chapterOverview" data-toggle="dropdown">
-                <ul id="leftDrop" id="bla" class="dropdown-menu" role="menu">
-                        <li id="firstDropLeft"  class="firstlistitem" >
+                <img src="pics/chapterOverview-inactive.png" class="dropdown-toggle-chapterOverview" data-toggle="dropdown"><p id="burgerTextBild">HUEHUEHUEHUEHUE</p>
+                <ul id="leftDrop" class="dropdown-menu" role="menu">
+                        <li   class="firstDropLeft firstlistitem" >
                             <ul class="nav navbar-nav navbar-left">
                                 <li><img src="pics/confirmation.png" alt="#"></li>
                                 <li><p>CHECK!<br> Kompetenzliste</p></li>
@@ -58,7 +60,7 @@
             <li class="dropdown">
                 <img src="pics/educationalPlan-inactive.png" class="dropdown-toggle-educationalPlan" data-toggle="dropdown">
                 <ul id="leftDrop" class="dropdown-menu">
-                    <li id="firstDropLeft" class="firstlistitem" >
+                    <li  class="firstlistitem firstDropLeft" >
                             <ul class="nav navbar-nav navbar-left">
                                 <li><img src="pics/educationalPlan-big.png" alt=""></li>
                                 <li><p> FÖRDERPLAN<br>MATHE ZR BIS ZUR 10</p></li>
@@ -74,7 +76,7 @@
             <li class="dropdown">
                 <img src="pics/achievedCompetences-inactive.png" class="dropdown-toggle-achievedCompetences" data-toggle="dropdown">
                 <ul id="leftDrop" class="dropdown-menu">
-                    <li id="firstDropLeft" class="firstlistitem" >
+                    <li class="firstlistitem firstDropLeft" >
                             <ul class="nav navbar-nav navbar-left">
                                 <li><img src="pics/achievedCompetences-big.png" alt="#"></li>
                                 <li><p>DAS<br>KANN<br>ICH!</p></li>
@@ -152,7 +154,7 @@
                 </ul>
             </li>
             <!-- Strich -->
-            <li><hr noshade></li>
+            <li><hr id="trennbalken" noshade></li>
             <li class="dropdown">
                 <img src="pics/help-inactive.png" class="dropdown-toggle-help" data-toggle="dropdown">
                 <ul id="rightDrop" class="dropdown-menu">
@@ -199,7 +201,7 @@
 </div>
 
 
-<nav class="navbar navbar-default navbar-fixed-bottom">
+<nav id="footer" class="navbar navbar-default navbar-fixed-bottom">
             <div class="container">
                 <img src="pics/login/footer.png">
                 <p id="head2">edition 2016 dark night blue 1.0</p>

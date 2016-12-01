@@ -3,6 +3,85 @@ body {
     background:pink;
 }
 
+@media screen and (max-width: 767px) {
+    body{
+        background-color: white;
+    }
+    #illustrationRight,#illustrationLeft, #scrollButtonUp, #scrollButtonDown, #footer, #rightDrop:after,#rightDrop:before, .firstDropRight:after,.firstDropRight:before, #leftDrop:after, #leftDrop:before, .firstDropLeft:after, .firstDropLeft:before, #trennbalken, .firstlistitem, .navbar-brand  {
+        display: none;
+    }
+    #burgerTextBild{
+        display: inline-block !important;
+        padding-left: 10px;
+        font-size: 13pt;
+        font-family: Franklin Gothic Heavy;
+        color: white;
+        margin: 0px;
+    }
+
+    .dropdown{
+        background-color: #001a3a;
+        margin-top: 4px;
+        padding-top: 6px !important;
+        padding-bottom: 6px !important;
+        padding-left: 6px !important;
+    }
+
+    #navbarElements{
+        margin-top: 9px;
+        max-height: 900%;
+    }
+
+    .navbar-nav{
+        margin: 0px;
+    }
+    .navbar-left{
+        margin-top: 7,5px;
+    }
+
+    .dropdown-menu a{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    margin: 0px !important;
+    padding-left: 10px !important;
+    padding-right: 0px !important;
+    color: white !important;
+    font-size: 13pt !important;
+    font-family: Franklin Gothic Heavy;
+    }
+    .dropdown-menu{
+        margin-top: 4px !important;
+    }
+
+
+}
+
+#burgerTextBild{
+    display: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #illustrationLeft{
     margin-top: 80px;
@@ -428,7 +507,7 @@ ul.scroll-menu-2x {
     margin-top: 20px;
 }
 
-#leftDrop:after, #topDrop:before {
+#leftDrop:after, #leftDrop:before {
 	bottom: 100%;
 	left: 9%;
 	border: solid transparent;
@@ -446,7 +525,7 @@ ul.scroll-menu-2x {
 	margin-left: -15px;
 }
 
-#firstDropLeft:after, #firstDropLeft:before {
+.firstDropLeft:after, .firstDropLeft:before {
 	bottom: 100%;
 	left: 7.3%;
 	border: solid transparent;
@@ -457,7 +536,7 @@ ul.scroll-menu-2x {
 	pointer-events: none;
 }
 
-#firstDropLeft:after {
+.firstDropLeft:after {
 	border-color: rgba(136, 183, 213, 0);
 	border-bottom-color: white;
 	border-width: 15px;
