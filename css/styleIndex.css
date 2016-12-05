@@ -407,26 +407,26 @@ li.firstlistitem {
     content: url("/pics/logout-active.png")
 }
 
-#dropdownBLAU{
+.dropdownBLAU{
     background-color: #001a3a;
 }
-#dropdownBLAU a:hover{
+.dropdownBLAU >li a:hover{
     background-color: #4565ad;
     color: white;
 }
-#dropdownBLAU>a{
+.dropdownBLAU>li a{
     color: #4565ad;
 }
 
-#dropdownWEIS{
+.dropdownWEIS{
     background-color: #001a3a;
 }
 
-#dropdownWEIS a:hover{
+.dropdownWEIS >li a:hover{
     background-color: #4565ad;
 }
 
-#dropdownWEIS>a{
+.dropdownWEIS> li a{
     color: white;
 }
 
@@ -510,12 +510,11 @@ ul.scroll-menu-2x {
 ::-webkit-scrollbar {
      display: none;
 }
-
-#leftDrop{
-    margin-top: 20px;
+.navbar-nav > li > .dropdown-menu {
+    margin-top: 20;
 }
 
-#leftDrop:after, #leftDrop:before {
+.leftDrop:after, .leftDrop:before {
 	bottom: 100%;
 	left: 9%;
 	border: solid transparent;
@@ -526,7 +525,7 @@ ul.scroll-menu-2x {
 	pointer-events: none;
 }
 
-#leftDrop:after {
+.leftDrop:after {
 	border-color: rgba(136, 183, 213, 0);
 	border-bottom-color: #001a3a;
 	border-width: 10px;
@@ -551,11 +550,7 @@ ul.scroll-menu-2x {
 	margin-left: -15px;
 }
 
-#rightDrop {
-    margin-top: 20px;
-}
-
-#rightDrop:after, #rightDrop:before {
+.rightDrop:after, .rightDrop:before {
 	bottom: 100%;
 	left: 94%;
 	border: solid transparent;
@@ -566,7 +561,7 @@ ul.scroll-menu-2x {
 	pointer-events: none;
 }
 
-#rightDrop:after {
+.rightDrop:after {
 	border-color: rgba(136, 183, 213, 0);
 	border-bottom-color: #001a3a;
 	border-width: 10px;
