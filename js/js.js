@@ -77,3 +77,15 @@ function chapter16(){
     document.body.style.backgroundColor = "#658bc8";
     $('#content').load('ChangeBody.html #chapter16');
 }
+function errorDelete(){
+    $('#fehlermeldungContainer').load('ChangeBody.html #errorDelete');
+}
+function error1(){
+    $('#fehlermeldungContainer').load('ChangeBody.html #error1');
+}
+function error2(){
+    $('#fehlermeldungContainer').load('ChangeBody.html #error2');
+}
+function error3(){
+    $('#fehlermeldungContainer').load('ChangeBody.html #error3');
+}

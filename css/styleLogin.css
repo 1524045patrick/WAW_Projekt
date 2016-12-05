@@ -82,3 +82,49 @@
     font-size: 13 pt;
     text-transform:uppercase;
 }
+
+#deleteButton{
+    margin-right: 10px;
+    margin-top: 10px;
+     float: right;
+}
+
+#platzhalter{
+    height: 26px;
+    width: 26px;
+    margin-right: 10px;
+    margin-top: 10px;
+    float: left;
+}
+
+
+
+#fehlermeldung{
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin:auto;
+    z-index: 1;
+    font-family: Roboto Thin;
+    font-size: 10pt;
+    color: white;
+    line-height: 15px;
+    border-radius: 6px;
+    border: solid 3px;
+    border-color: white;
+}
+#textFieldError{
+    height: 80px;
+    width: 270px;
+    text-align: center;
+    margin: auto;
+
+}
+#bildError{
+    margin:20px;
+}
