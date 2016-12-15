@@ -6,6 +6,7 @@
    <script src="js/jquery-3.1.1.min.js"></script>
    <script src="js/bootstrap.min.js"></script>
    <script type="text/javascript" language="JavaScript" src="js/js.js"></script>
+   <script type="text/javascript" language="JavaScript" src="js/keinplan.js"></script>
     <title>CHECK!</title>
 </head>
 <body>
@@ -22,18 +23,18 @@
 <!-- Brand-Logo -->
 
      <div class="brand-centered navbar-header">
-        <a class="navbar-brand"><img src="pics/logo.png" alt="#"></a>
+        <a class="navbar-brand"><img src="images/logo.png" alt="#"></a>
      </div>
 <!-- Beide Dropdowns -->
      <div id="navbarElements" class="navbar-collapse collapse">
         <!-- Dropdown-left -->
           <ul class="nav navbar-nav navbar-left">
             <li class="dropdown">
-                <img src="pics/chapterOverview-inactive.png" class="dropdown-toggle-chapterOverview" data-toggle="dropdown"><p id="burgerTextBild">Kompetenzliste</p>
+                <img src="images/chapterOverview-inactive.png" class="dropdown-toggle-chapterOverview" data-toggle="dropdown"><p id="burgerTextBild">Kompetenzliste</p>
                 <ul class="dropdown-menu leftDrop" role="menu">
                         <li   class="firstDropLeft firstlistitem" >
                             <ul class="nav navbar-nav navbar-left">
-                                <li><img src="pics/confirmation.png" alt="#"></li>
+                                <li><img src="images/confirmation.png" alt="#"></li>
                                 <li><p>CHECK!<br> Kompetenzliste</p></li>
                             </ul>
                         </li>
@@ -57,12 +58,12 @@
                     </ul>
                 </ul>
             <li class="dropdown">
-                <img src="pics/educationalPlan-inactive.png" class="dropdown-toggle-educationalPlan" data-toggle="dropdown">
+                <img src="images/educationalPlan-inactive.png" class="dropdown-toggle-educationalPlan" data-toggle="dropdown">
                 <p id="burgerTextBild">Förderplan</p>
                 <ul class="dropdown-menu leftDrop">
                     <li  class="firstlistitem firstDropLeft" >
                             <ul class="nav navbar-nav navbar-left">
-                                <li><img src="pics/educationalPlan-big.png" alt=""></li>
+                                <li><img src="images/educationalPlan-big.png" alt=""></li>
                                 <li><p> FÖRDERPLAN<br>MATHE ZR BIS ZUR 10</p></li>
                             </ul>
                         </li>
@@ -74,12 +75,12 @@
                 </ul>
             </li>
             <li class="dropdown">
-                <img src="pics/achievedCompetences-inactive.png" class="dropdown-toggle-achievedCompetences" data-toggle="dropdown">
+                <img src="images/achievedCompetences-inactive.png" class="dropdown-toggle-achievedCompetences" data-toggle="dropdown">
                 <p id="burgerTextBild">Das kann ich</p>
                 <ul class="dropdown-menu leftDrop">
                     <li class="firstlistitem firstDropLeft" >
                             <ul class="nav navbar-nav navbar-left">
-                                <li><img src="pics/achievedCompetences-big.png" alt="#"></li>
+                                <li><img src="images/achievedCompetences-big.png" alt="#"></li>
                                 <li><p>DAS<br>KANN<br>ICH!</p></li>
                             </ul>
                         </li>
@@ -108,13 +109,13 @@
         <!-- Dropdown-right -->
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
-                <img src="pics/student/superhero-robin-inactive.png" class="dropdown-toggle-profil" data-toggle="dropdown">
+                <img src="images/student/superhero-robin-inactive.png" class="dropdown-toggle-profil" data-toggle="dropdown">
                 <p id="burgerTextBild">Dei Name</p>
                 <ul class="dropdown-menu rightDrop">
                     <li class="firstlistitem firstDropRight" id="dropdownInfosFirst" >
                             <ul class="nav navbar-nav navbar-left">
-                                <li><img src="pics/student/superhero-robin-big-active.png" alt="#"></li>
-                                <li><p>Dein<br>Name</p></li>
+                                <li><img id="nameImg" src="#" alt="#"></li>
+                                <li id="name"></li>
                             </ul>
                         </li>
                     <li id="dropdownInfos" style="padding-bottom:5px"> Datumsdfgsdf</li>
@@ -127,12 +128,12 @@
                 </ul>
             </li>
             <li class="dropdown">
-                <img src="pics/school/school-inactive.png" class="dropdown-toggle-school" data-toggle="dropdown">
+                <img src="images/school/school-inactive.png" class="dropdown-toggle-school" data-toggle="dropdown">
                 <p id="burgerTextBild">Dei Schulä</p>
                 <ul class="dropdown-menu rightDrop">
                     <li class="firstlistitem firstDropRight" id="dropdownInfosFirst">
                         <ul class="nav navbar-nav navbar-left">
-                                <li><img src="pics/school/school-red-big-active.png" alt=""></li>
+                                <li><img src="images/school/school-red-big-active.png" alt=""></li>
                                 <li class="dropdownBLAU"><p> ASTRID-<br>LINDEGREN-<br>SCHULE</p></li>
                     </ul>
                     </li>
@@ -143,12 +144,12 @@
                 </ul>
             </li>
             <li class="dropdown">
-                <img src="pics/studyGroup/studyGroup_1a_inactive.png" class="dropdown-toggle-studyGroup" data-toggle="dropdown">
+                <img src="images/studyGroup/studyGroup_1a_inactive.png" class="dropdown-toggle-studyGroup" data-toggle="dropdown">
                 <p id="burgerTextBild">Dei Klassö</p>
                 <ul class="dropdown-menu rightDrop">
                      <li class="firstlistitem firstDropRight" id="dropdownInfosFirst">
                         <ul class="nav navbar-nav navbar-left">
-                                <li><img src="pics/studyGroup/studyGroup_1a_active-big.png" alt=""></li>
+                                <li><img src="images/studyGroup/studyGroup_1a_active-big.png" alt=""></li>
                                 <li class="dropdownBLAU"><p> KLASSE<br>1A</p></li>
                     </ul>
                     </li>
@@ -160,12 +161,12 @@
             <!-- Strich -->
             <li><hr id="trennbalken" noshade></li>
             <li class="dropdown">
-                <img src="pics/help-inactive.png" class="dropdown-toggle-help" data-toggle="dropdown">
+                <img src="images/help-inactive.png" class="dropdown-toggle-help" data-toggle="dropdown">
                 <p id="burgerTextBild">Brauchst du hilfe?</p>
                 <ul class="dropdown-menu rightDrop">
                     <li class="firstlistitem firstDropRight" >
                             <ul class="nav navbar-nav navbar-left">
-                                <li><img src="pics/help-big.png" alt="#"></li>
+                                <li><img src="images/help-big.png" alt="#"></li>
                                 <li><p>BRAUCHST<br>DU HILFE?</p></li>
                             </ul>
                         </li>
@@ -178,12 +179,12 @@
                 </ul>
             </li>
             <li class="dropdown">
-                <img src="pics/logout-iactive.png" class="dropdown-toggle-logout" data-toggle="dropdown">
+                <img src="images/logout-iactive.png" class="dropdown-toggle-logout" data-toggle="dropdown">
                 <p id="burgerTextBild">Möchtest du CHECK! verlassen?</p>
                 <ul class="dropdown-menu rightDrop">
                     <li class="firstlistitem firstDropRight" >
                             <ul class="nav navbar-nav navbar-left">
-                                <li><img src="pics/logout-big.png" alt="#"></li>
+                                <li><img src="images/logout-big.png" alt="#"></li>
                                 <li><p>MÖCHTEST DU<br>CHECK!<br>VERLASSEN?</p></li>
                             </ul>
                         </li>
@@ -200,7 +201,7 @@
 
 <div id="content">
     <div style="text-align:center">
-        <img src="picsEigene/totoroooooo.gif">
+        <img src="imagesEigene/totoroooooo.gif">
     </div>
 
 
@@ -209,7 +210,7 @@
 
 <nav id="footer" class="navbar navbar-default navbar-fixed-bottom">
             <div class="container">
-                <img src="pics/login/footer.png">
+                <img src="images/login/footer.png">
                 <p id="head2">edition 2016 dark night blue 1.0</p>
             </div>
         </nav>
