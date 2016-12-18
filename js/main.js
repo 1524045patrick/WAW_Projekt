@@ -1,4 +1,5 @@
-var token ={};
+var token = localStorage.getItem('token');
+alert(token);
 var student={};
 var avatare=[];
 
@@ -84,9 +85,11 @@ function chapter16(){
     document.body.style.backgroundColor = "#658bc8";
     $('#content').load('ChangeBody.html #chapter16');
 }
+
 function errorDelete(){
     $('#fehlermeldungContainer').load('ChangeBody.html #errorDelete');
 }
+
 function error1(){
     $('#fehlermeldungContainer').load('ChangeBody.html #error1');
 }
@@ -96,20 +99,13 @@ function error2(){
 function error3(){
     $('#fehlermeldungContainer').load('ChangeBody.html #error3');
 }
+
 function startBild(){
     document.body.style.backgroundColor = "white";
     $('#content').load('ChangeBody.html #startBild');
 }
 
-
-
 function login(){
-    //JSON um den Token zu bekommen
-    var tokenJSON = {
-        "async": false,
-        "url": "http://46.101.204.215:1337/api/V1/login",
-        "method": "PUT" }
-
     //JSON um den Student zu bekommen
     var studentJSON = {
         "async": false,
@@ -126,11 +122,6 @@ function login(){
         "headers": {
             "authorization":""}}
 
-    //Befehl um token zu bekommen
-    $.ajax(tokenJSON).done(function (response) {
-        token=response;
-    });
-
     //ändere den token in studentJSON und avatareJSON
     studentJSON.headers.authorization = token.token;
     avatareJSON.headers.authorization = token.token;
@@ -138,19 +129,20 @@ function login(){
     //Befehl um student zu bekommen
     $.ajax(studentJSON).done(function (response) {
     student=response;
+    console.log(response);
+        alert("");
     });
 
     //Befehl um avatare zu bekommen
     $.ajax(avatareJSON).done(function (response) {
     avatare=response;
+    console.log(response);
+        alert("");
     });
-
 
 }
 
-login();
-
-$(document).ready(function() {
+function setInfos(){
   $('#name').html(student.forename+'<br>'+student.surname);
   $("#nameImg").attr("src",avatare[student.avatarId].avatarBigUrl);
   $("#profilePic").attr("src",avatare[student.avatarId].avatarInactiveUrl);
@@ -167,8 +159,7 @@ $(document).ready(function() {
   $('#klasseName').html("Klasse<br>"+student.studyGroups.class);
   $('#dropdownInfosLastName').html(student.formteacher);
 
-});
-
+}
 
 var picChange=avatare[student.avatarId];
 function changePic(pic){
@@ -193,4 +184,7 @@ function changePicSave(){
     login();
 };
 
-
+  login();
+$(document).ready(function(){
+    setInfos();
+});

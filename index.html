@@ -1,218 +1,62 @@
-<html>
+<!DOCTYPE html>
+<html id="loginHTML" lang="en">
+
 <head>
-    <meta name="viewport" content="width=device-width" />
-   <link rel="stylesheet" href="css/bootstrap.css">
-   <link href="css/styleIndex.css" rel="stylesheet">
-   <script src="js/jquery-3.1.1.min.js"></script>
-   <script src="js/bootstrap.min.js"></script>
-   <script type="text/javascript" language="JavaScript" src="js/js.js"></script>
-    <title>CHECK!</title>
+    <title>student.check</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styleLogin.css" rel="stylesheet">
+    <link href="css/media-queries.css" rel="stylesheet">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" language="JavaScript" src="js/login.js"></script>
+
+
 </head>
-<body>
 
-<nav id="navbarTop" class="navbar navbar-inverse  navbar-fixed-top">
-  <div class="container-fluid">
- <!-- Button Burger-Menü -->
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarElements">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-<!-- Brand-Logo -->
+<body id="loginBody" class="loginpagetext" style="background:white">
+   <div style ="position: absolute">
+       <img src="images/student/superhero-spiderman-active.png" onclick="error1()">
+       <img src="images/student/superhero-spiderman-active.png" onclick="error2()">
+       <img src="images/student/superhero-spiderman-active.png" onclick="error3()">
+   </div>
 
-     <div class="brand-centered navbar-header">
-        <a class="navbar-brand"><img src="images/logo.png" alt="#"></a>
-     </div>
-<!-- Beide Dropdowns -->
-     <div id="navbarElements" class="navbar-collapse collapse">
-        <!-- Dropdown-left -->
-          <ul class="nav navbar-nav navbar-left">
-            <li class="dropdown">
-                <img src="images/chapterOverview-inactive.png" class="dropdown-toggle-chapterOverview" data-toggle="dropdown"><p id="burgerTextBild">Kompetenzliste</p>
-                <ul class="dropdown-menu leftDrop" role="menu">
-                        <li   class="firstDropLeft firstlistitem" >
-                            <ul class="nav navbar-nav navbar-left">
-                                <li><img src="images/confirmation.png" alt="#"></li>
-                                <li class="infosDropdownAbstand"><p>CHECK!<br> Kompetenzliste</p></li>
-                            </ul>
-                        </li>
-                    <ul class="dropdown-menu scroll-menu">
-                        <li id="dasbinich"><a onclick="chapter1()">DAS BIN ICH!</a></li>
-                        <li id="ichunddieanderen"><a onclick="chapter2()">ICH UND DIE ANDEREN</a></li>
-                        <li id="dieweltummichherum"><a onclick="chapter3()">DIE WELT UM MICH HERUM</a></li>
-                        <li id="ichwerdeselbststaendig"><a onclick="chapter4()">ICH WERDE SELBSTSTÄNDIG</a></li>
-                        <li id="sichbewegen"><a onclick="chapter5()">SICH BEWEGEN</a></li>
-                        <li id="lernen"><a onclick="chapter6()">LERNEN</a></li>
-                        <li id="arbeiten"><a onclick="chapter7()">ARBEITEN</a></li>
-                        <li id="gestaltenunderschaffen"><a onclick="chapter8()">GESTALTEN UND ERSCHAFFEN</a></li>
-                        <li id="sprachen"><a onclick="chapter9()">SPRECHEN</a></li>
-                        <li id="fremdsprache"><a onclick="chapter10()">FREMDSPRACHE</a></li>
-                        <li id="lesen"><a onclick="chapter11()">LESEN</a></li>
-                        <li id="schreiben"><a onclick="chapter12()">SCHREIBEN</a></li>
-                        <li id="messen"><a onclick="chapter13()">MESSEN</a></li>
-                        <li id="loesungenfinden"><a onclick="chapter14()">LÖSUNGEN FINDEN</a></li>
-                        <li id="zaehlenundrechnen"><a onclick="chapter15()">ZÄHLEN UND RECHNEN</a></li>
-                        <li class="lastListItem" id="formundraumentdecken"><a onclick="chapter16()">FORM UND RAUM ENTDECKEN</a></li>
-                    </ul>
-                </ul>
-            <li class="dropdown">
-                <img src="images/educationalPlan-inactive.png" class="dropdown-toggle-educationalPlan" data-toggle="dropdown">
-                <p id="burgerTextBild">Förderplan</p>
-                <ul class="dropdown-menu leftDrop">
-                    <li  class="firstlistitem firstDropLeft" >
-                            <ul class="nav navbar-nav navbar-left">
-                                <li><img src="images/educationalPlan-big.png" alt=""></li>
-                                <li class="infosDropdownAbstand"><p> FÖRDERPLAN<br>MATHE ZR BIS ZUR 10</p></li>
-                            </ul>
-                        </li>
-                     <ul class="dropdown-menu scroll-menu dropdownBLAU">
-                        <li ><a href="#">MATHE ZR BIS 10</a></li>
-                        <li ><a href="#">DEUTSCH SATZANFÄNGE</a></li>
-                        <li class="lastListItem"><a href="#">SACHKUNDE "DER WALD"</a></li>
-                    </ul>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <img src="images/achievedCompetences-inactive.png" class="dropdown-toggle-achievedCompetences" data-toggle="dropdown">
-                <p id="burgerTextBild">Das kann ich</p>
-                <ul class="dropdown-menu leftDrop">
-                    <li class="firstlistitem firstDropLeft" >
-                            <ul class="nav navbar-nav navbar-left">
-                                <li><img src="images/achievedCompetences-big.png" alt="#"></li>
-                                <li class="infosDropdownAbstand"><p>DAS<br>KANN<br>ICH!</p></li>
-                            </ul>
-                        </li>
-                    <ul class="dropdown-menu scroll-menu">
-                        <li id="allekompetenzen" ><a href="#">ALLE KOMPETENZEN!</a></li>
-                        <li id="dasbinich"><a href="#">DAS BIN ICH!</a></li>
-                        <li id="ichunddieanderen"><a href="#">ICH UND DIE ANDEREN</a></li>
-                        <li id="dieweltummichherum"><a href="#">DIE WELT UM MICH HERUM</a></li>
-                        <li id="ichwerdeselbststaendig"><a href="#">ICH WERDE SELBSTSTÄNDIG</a></li>
-                        <li id="sichbewegen"><a href="#">SICH BEWEGEN</a></li>
-                        <li id="lernen"><a href="#">LERNEN</a></li>
-                        <li id="arbeiten"><a href="#">ARBEITEN</a></li>
-                        <li id="gestaltenunderschaffen"><a href="#">GESTALTEN UND ERSCHAFFEN</a></li>
-                        <li id="sprachen"><a href="#">SPRECHEN</a></li>
-                        <li id="fremdsprache"><a href="#">FREMDSPRACHE</a></li>
-                        <li id="lesen"><a href="#">LESEN</a></li>
-                        <li id="schreiben"><a href="#">SCHREIBEN</a></li>
-                        <li id="messen"><a href="#">MESSEN</a></li>
-                        <li id="loesungenfinden"><a href="#">LÖSUNGEN FINDEN</a></li>
-                        <li id="zaehlenundrechnen"><a href="#">ZÄHLEN UND RECHNEN</a></li>
-                        <li class="lastListItem" id="formundraumentdecken"><a href="#">FORM UND RAUM ENTDECKEN</a></li>
-                    </ul>
-                </ul>
-            </li>
-        </ul>
-        <!-- Dropdown-right -->
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-                <img id="profilePic" src="" class="dropdown-toggle-profil" data-toggle="dropdown">
-                <p id="burgerTextBild">Dei Name</p>
-                <ul class="dropdown-menu rightDrop">
-                    <li class="firstlistitem firstDropRight" id="dropdownInfosFirst" >
-                            <ul class="nav navbar-nav navbar-left">
-                                <li><img id="nameImg" src="" alt="#"></li>
-                                <li id="name" class="infosDropdownAbstand"></li>
-                            </ul>
-                        </li>
-                     <ul class="dropdown-menu scroll-menu dropdownBLAU">
-
-                        <li><a onclick="profilBildAendern()">MEIN PROFILBILD ÄNDERN</a></li>
-                        <li><a onclick="passwortAendern()">MEIN PASSWORT ANDERN</a></li>
-                        <li class="lastListItem"><a onclick="profilLöschen()">MEIN PROFIL LÖSCHEN</a></li>
-                    </ul>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <img src="images/school/school-inactive.png" class="dropdown-toggle-school" data-toggle="dropdown">
-                <p id="burgerTextBild">Dei Schulä</p>
-                <ul class="dropdown-menu rightDrop">
-                    <li class="firstlistitem firstDropRight" id="dropdownInfosFirst">
-                        <ul class="nav navbar-nav navbar-left">
-                                <li><img id="schoolPic" src="" alt=""></li>
-                                <li id="schoolName" class="dropdownBLAU infosDropdownAbstand" style=" max-width: 100px;"></li>
-                    </ul>
-                    </li>
-
-                        <li id="dropdownInfos"></li>
-                        <li class="lastListItem" id="dropdownInfosLast"><br></li>
-
-                </ul>
-            </li>
-            <li class="dropdown">
-                <img id="klassePic"src="" class="dropdown-toggle-studyGroup" data-toggle="dropdown">
-                <p id="burgerTextBild">Dei Klassö</p>
-                <ul class="dropdown-menu rightDrop">
-                     <li class="firstlistitem firstDropRight" id="dropdownInfosFirst">
-                        <ul class="nav navbar-nav navbar-left">
-                                <li><img id="klassePicBig" src="" alt=""></li>
-                                <li id="klasseName" class="dropdownBLAU infosDropdownAbstand"></li>
-                    </ul>
-                    </li>
-
-                    <li id="dropdownInfos">KLASSENLEHRER*IN</li>
-                    <li class="lastListItem" id="dropdownInfosLastName"></li>
-                </ul>
-            </li>
-            <!-- Strich -->
-            <li><hr id="trennbalken" noshade></li>
-            <li class="dropdown">
-                <img src="images/help-inactive.png" class="dropdown-toggle-help" data-toggle="dropdown">
-                <p id="burgerTextBild">Brauchst du hilfe?</p>
-                <ul class="dropdown-menu rightDrop">
-                    <li class="firstlistitem firstDropRight" >
-                            <ul class="nav navbar-nav navbar-left">
-                                <li><img src="images/help-big.png" alt="#"></li>
-                                <li class="infosDropdownAbstand"><p>BRAUCHST<br>DU HILFE?</p></li>
-                            </ul>
-                        </li>
-                     <ul class="dropdown-menu scroll-menu dropdownWEIS">
-                        <li><a href="#">SO GEHT'S!</a></li>
-                        <li><a href="#">VIDEO-TUTORIALS</a></li>
-                        <li><a href="#">HÄUFIG GESTELLTE FRAGEN</a></li>
-                        <li class="lastListItem"><a href="#">KONTAKT</a></li>
-                    </ul>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <img src="images/logout-iactive.png" class="dropdown-toggle-logout" data-toggle="dropdown">
-                <p id="burgerTextBild">Möchtest du CHECK! verlassen?</p>
-                <ul class="dropdown-menu rightDrop">
-                    <li class="firstlistitem firstDropRight" >
-                            <ul class="nav navbar-nav navbar-left">
-                                <li><img src="images/logout-big.png" alt="#"></li>
-                                <li class="infosDropdownAbstand"><p>MÖCHTEST DU<br>CHECK!<br>VERLASSEN?</p></li>
-                            </ul>
-                        </li>
-                     <ul class="dropdown-menu scroll-menu dropdownWEIS">
-                        <li><a href="login.html">JA</a></li>
-                        <li class="lastListItem"><a href="#">NEIN</a></li>
-                    </ul>
-                </ul>
-            </li>
-        </ul>
-      </div>
-  </div>
-</nav>
-
-<div id="content">
-    <div style="text-align:center">
-        <img src="imagesEigene/totoroooooo.gif">
+     <div id="fehlermeldungContainer">
+       <!-- JS macht was rein-->
     </div>
+    <div class="container">
+        <div class="row">
+            <div>
+                <img class="profile-img" src="images/login/header.png" alt="">
+                <div id="loginField" class="col-sm-6 col-md-4 col-md-offset-4">
+                    <div id="accountwall" class="account-wall">
+                        <div id="loginTitle" class="container col-lg-12">
+
+                            <div id="inputFields">
+                           <input id="emailinput" type="text" class="form-control loginData" placeholder="BENUTZERNAME" required autofocus>
+                            <input id="passwordinput" type="password" class="form-control loginData" placeholder="PASSWORT" required min=7>
+                            </div>
+                            <button id="loginButton" class="btn btn-lg btn-success btn-block" type="submit" onclick="loginButton()"> Los! </button>
 
 
-</div>
-
-
-<nav id="footer" class="navbar navbar-default navbar-fixed-bottom">
-            <div class="container">
-                <img src="images/login/footer.png">
-                <p id="head2">edition 2016 dark night blue 1.0</p>
+                    </div>
+                </div>
             </div>
-        </nav>
+        </div>
+        <p id="register" class="col-xs-12 loginpagetext">Sie möchten mit CHECK! arbeiten?
+            <br> <a id="registerlink" href="#">Jetzt registrieren.</a></p>
+        <div class="col-lg-12" id="footerText">
+            <footer class="col-lg-12">
+                <img src="images/login/footer.png" style="padding: 5px">
+                <br>edition 2016 dark night blue 1.0
+               <br> <p id="checkFooter">CHECK! und CHECK! Lehrerzimmer sind Produkte des Raup&Ritter Verlag und der OnWerk Softwareagentur Mannheim
+                <br><a href="http://www.raupundritter.com">www.raupundritter.com </a>-<a href="#"> Kontakt </a>-<a href="#"> Impressum </a>-<a href="#"> Preise </a>-<a href="#"> Hilfe</a>
+                </p>
+            </footer>
+        </div>
+    </div>
+       </div>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
-
-
