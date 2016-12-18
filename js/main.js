@@ -1,5 +1,6 @@
-var token = localStorage.getItem('token');
-alert(token);
+
+var tokenString = localStorage.getItem('token');
+var token = JSON.parse(tokenString);
 var student={};
 var avatare=[];
 
@@ -86,20 +87,6 @@ function chapter16(){
     $('#content').load('ChangeBody.html #chapter16');
 }
 
-function errorDelete(){
-    $('#fehlermeldungContainer').load('ChangeBody.html #errorDelete');
-}
-
-function error1(){
-    $('#fehlermeldungContainer').load('ChangeBody.html #error1');
-}
-function error2(){
-    $('#fehlermeldungContainer').load('ChangeBody.html #error2');
-}
-function error3(){
-    $('#fehlermeldungContainer').load('ChangeBody.html #error3');
-}
-
 function startBild(){
     document.body.style.backgroundColor = "white";
     $('#content').load('ChangeBody.html #startBild');
@@ -129,15 +116,11 @@ function login(){
     //Befehl um student zu bekommen
     $.ajax(studentJSON).done(function (response) {
     student=response;
-    console.log(response);
-        alert("");
     });
 
     //Befehl um avatare zu bekommen
     $.ajax(avatareJSON).done(function (response) {
     avatare=response;
-    console.log(response);
-        alert("");
     });
 
 }
@@ -185,6 +168,8 @@ function changePicSave(){
 };
 
   login();
+
 $(document).ready(function(){
     setInfos();
 });
+

@@ -407,7 +407,8 @@ li.firstlistitem {
 }
 
 .dropdownBLAU{
-    background-color: #001a3a;
+    background-color: white;
+
 }
 .dropdownBLAU >li a:hover{
     background-color: #4565ad;
@@ -415,6 +416,7 @@ li.firstlistitem {
 }
 .dropdownBLAU>li a{
     color: #4565ad;
+     background-color: #001a3a;
 }
 
 .dropdownWEIS{
@@ -681,5 +683,8 @@ ul.scroll-menu-2x {
 .infosDropdownAbstand{
     padding-left: 10px;
     line-height: 1;
+    max-width: 100px;
+    background-color: #001a3a;
+
 }
 
