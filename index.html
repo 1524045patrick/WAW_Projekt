@@ -6,7 +6,6 @@
    <script src="js/jquery-3.1.1.min.js"></script>
    <script src="js/bootstrap.min.js"></script>
    <script type="text/javascript" language="JavaScript" src="js/js.js"></script>
-   <script type="text/javascript" language="JavaScript" src="js/keinplan.js"></script>
     <title>CHECK!</title>
 </head>
 <body>
@@ -35,7 +34,7 @@
                         <li   class="firstDropLeft firstlistitem" >
                             <ul class="nav navbar-nav navbar-left">
                                 <li><img src="images/confirmation.png" alt="#"></li>
-                                <li><p>CHECK!<br> Kompetenzliste</p></li>
+                                <li class="infosDropdownAbstand"><p>CHECK!<br> Kompetenzliste</p></li>
                             </ul>
                         </li>
                     <ul class="dropdown-menu scroll-menu">
@@ -64,7 +63,7 @@
                     <li  class="firstlistitem firstDropLeft" >
                             <ul class="nav navbar-nav navbar-left">
                                 <li><img src="images/educationalPlan-big.png" alt=""></li>
-                                <li><p> FÖRDERPLAN<br>MATHE ZR BIS ZUR 10</p></li>
+                                <li class="infosDropdownAbstand"><p> FÖRDERPLAN<br>MATHE ZR BIS ZUR 10</p></li>
                             </ul>
                         </li>
                      <ul class="dropdown-menu scroll-menu dropdownBLAU">
@@ -81,7 +80,7 @@
                     <li class="firstlistitem firstDropLeft" >
                             <ul class="nav navbar-nav navbar-left">
                                 <li><img src="images/achievedCompetences-big.png" alt="#"></li>
-                                <li><p>DAS<br>KANN<br>ICH!</p></li>
+                                <li class="infosDropdownAbstand"><p>DAS<br>KANN<br>ICH!</p></li>
                             </ul>
                         </li>
                     <ul class="dropdown-menu scroll-menu">
@@ -109,16 +108,15 @@
         <!-- Dropdown-right -->
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
-                <img src="images/student/superhero-robin-inactive.png" class="dropdown-toggle-profil" data-toggle="dropdown">
+                <img id="profilePic" src="" class="dropdown-toggle-profil" data-toggle="dropdown">
                 <p id="burgerTextBild">Dei Name</p>
                 <ul class="dropdown-menu rightDrop">
                     <li class="firstlistitem firstDropRight" id="dropdownInfosFirst" >
                             <ul class="nav navbar-nav navbar-left">
-                                <li><img id="nameImg" src="#" alt="#"></li>
-                                <li id="name"></li>
+                                <li><img id="nameImg" src="" alt="#"></li>
+                                <li id="name" class="infosDropdownAbstand"></li>
                             </ul>
                         </li>
-                    <li id="dropdownInfos" style="padding-bottom:5px"> Datumsdfgsdf</li>
                      <ul class="dropdown-menu scroll-menu dropdownBLAU">
 
                         <li><a onclick="profilBildAendern()">MEIN PROFILBILD ÄNDERN</a></li>
@@ -133,29 +131,29 @@
                 <ul class="dropdown-menu rightDrop">
                     <li class="firstlistitem firstDropRight" id="dropdownInfosFirst">
                         <ul class="nav navbar-nav navbar-left">
-                                <li><img src="images/school/school-red-big-active.png" alt=""></li>
-                                <li class="dropdownBLAU"><p> ASTRID-<br>LINDEGREN-<br>SCHULE</p></li>
+                                <li><img id="schoolPic" src="" alt=""></li>
+                                <li id="schoolName" class="dropdownBLAU infosDropdownAbstand" style=" max-width: 100px;"></li>
                     </ul>
                     </li>
 
-                        <li id="dropdownInfos">ADRESSE<br>PLZ ORT<br>LAND</li>
-                        <li class="lastListItem" id="dropdownInfosLast"><br>EMAIL<br>TELEFON</li>
+                        <li id="dropdownInfos"></li>
+                        <li class="lastListItem" id="dropdownInfosLast"><br></li>
 
                 </ul>
             </li>
             <li class="dropdown">
-                <img src="images/studyGroup/studyGroup_1a_inactive.png" class="dropdown-toggle-studyGroup" data-toggle="dropdown">
+                <img id="klassePic"src="" class="dropdown-toggle-studyGroup" data-toggle="dropdown">
                 <p id="burgerTextBild">Dei Klassö</p>
                 <ul class="dropdown-menu rightDrop">
                      <li class="firstlistitem firstDropRight" id="dropdownInfosFirst">
                         <ul class="nav navbar-nav navbar-left">
-                                <li><img src="images/studyGroup/studyGroup_1a_active-big.png" alt=""></li>
-                                <li class="dropdownBLAU"><p> KLASSE<br>1A</p></li>
+                                <li><img id="klassePicBig" src="" alt=""></li>
+                                <li id="klasseName" class="dropdownBLAU infosDropdownAbstand"></li>
                     </ul>
                     </li>
 
                     <li id="dropdownInfos">KLASSENLEHRER*IN</li>
-                    <li class="lastListItem" id="dropdownInfosLastName">Valerie Wildenmann</li>
+                    <li class="lastListItem" id="dropdownInfosLastName"></li>
                 </ul>
             </li>
             <!-- Strich -->
@@ -167,7 +165,7 @@
                     <li class="firstlistitem firstDropRight" >
                             <ul class="nav navbar-nav navbar-left">
                                 <li><img src="images/help-big.png" alt="#"></li>
-                                <li><p>BRAUCHST<br>DU HILFE?</p></li>
+                                <li class="infosDropdownAbstand"><p>BRAUCHST<br>DU HILFE?</p></li>
                             </ul>
                         </li>
                      <ul class="dropdown-menu scroll-menu dropdownWEIS">
@@ -185,11 +183,11 @@
                     <li class="firstlistitem firstDropRight" >
                             <ul class="nav navbar-nav navbar-left">
                                 <li><img src="images/logout-big.png" alt="#"></li>
-                                <li><p>MÖCHTEST DU<br>CHECK!<br>VERLASSEN?</p></li>
+                                <li class="infosDropdownAbstand"><p>MÖCHTEST DU<br>CHECK!<br>VERLASSEN?</p></li>
                             </ul>
                         </li>
                      <ul class="dropdown-menu scroll-menu dropdownWEIS">
-                        <li><a href="login.html dropdownWEIS">JA</a></li>
+                        <li><a href="login.html">JA</a></li>
                         <li class="lastListItem"><a href="#">NEIN</a></li>
                     </ul>
                 </ul>

@@ -379,31 +379,30 @@ li.firstlistitem {
 }
 
 
-.firstlistitem p{
-    padding-left: 5px;
-}
-.dropdown-toggle-chapterOverview:active,.open .dropdown-toggle-chapterOverview{
+.open .dropdown-toggle-chapterOverview{
     content: url("/images/chapterOverview-active.png")
 }
-.dropdown-toggle-educationalPlan:active,.open .dropdown-toggle-educationalPlan{
+.open .dropdown-toggle-educationalPlan{
     content: url("/images/educationalPlan-active.png")
 }
-.dropdown-toggle-achievedCompetences:active,.open .dropdown-toggle-achievedCompetences{
+.open .dropdown-toggle-achievedCompetences{
     content: url("/images/achievedCompetences-active.png")
 }
-.dropdown-toggle-profil:active,.open .dropdown-toggle-profil{
-    content: url("/images/student/superhero-robin-active.png")
+
+.open .dropdown-toggle-profil{
+
 }
-.dropdown-toggle-school:active,.open .dropdown-toggle-school{
+
+.open .dropdown-toggle-school{
     content: url("/images/school/school-green-active.png")
 }
-.dropdown-toggle-studyGroup:active,.open .dropdown-toggle-studyGroup{
+.open .dropdown-toggle-studyGroup{
     content: url("/images/studyGroup/studyGroup_1a_active.png")
 }
-.dropdown-toggle-help:active,.open .dropdown-toggle-help{
+.open .dropdown-toggle-help{
     content: url("/images/help-active.png")
 }
-.dropdown-toggle-logout:active,.open .dropdown-toggle-logout{
+.open .dropdown-toggle-logout{
     content: url("/images/logout-active.png")
 }
 
@@ -678,6 +677,9 @@ ul.scroll-menu-2x {
     margin-top: 60px;
     float: left;
 
-
+}
+.infosDropdownAbstand{
+    padding-left: 10px;
+    line-height: 1;
 }
 

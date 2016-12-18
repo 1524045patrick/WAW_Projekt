@@ -8,7 +8,7 @@ function login(){
     var tokenJSON = {
         "async": false,
         "url": "http://46.101.204.215:1337/api/V1/login",
-        "method": "PUT", }
+        "method": "PUT" }
 
     //JSON um den Student zu bekommen
     var studentJSON = {
@@ -17,6 +17,7 @@ function login(){
         "method": "GET",
         "headers": {
             "authorization":""}}
+
     //JSON Avatare
     var avatareJSON = {
         "async": false,
@@ -24,6 +25,7 @@ function login(){
         "method": "GET",
         "headers": {
             "authorization":""}}
+
     //Befehl um token zu bekommen
     $.ajax(tokenJSON).done(function (response) {
         token=response;
@@ -41,16 +43,30 @@ function login(){
     //Befehl um avatare zu bekommen
     $.ajax(avatareJSON).done(function (response) {
     avatare=response;
-        console.log(avatare);
     });
 
 
 }
-var name = avatare[1].avatarBigUrl;
-alert(name);
+
 login();
-$(document).ready(function(){
+
+$(document).ready(function() {
   $('#name').html(student.forename+'<br>'+student.surname);
   $("#nameImg").attr("src",avatare[student.avatarId].avatarBigUrl);
-  $('#name').html(student.forename+'<br>'+student.surname);
+  $("#profilePic").attr("src",avatare[student.avatarId].avatarInactiveUrl);
+  $("#schoolPic").attr("src",student.school.imageUrlBig);
+  $('#schoolName').html(student.school.name);
+
+  var adresse = student.school.address;
+  var resAdresse = adresse.split(",");
+  $('#dropdownInfos').html(resAdresse[0]+"<br>"+resAdresse[1]+"<br>"+student.school.country);
+  $('#dropdownInfosLast').html("<br>"+student.school.email+"<br>"+student.school.telefon);
+
+  $("#klassePic").attr("src",student.studyGroups.imageUrlBig);
+  $("#klassePicBig").attr("src",student.studyGroups.imageUrlInactive);
+  $('#klasseName').html("Klasse<br>"+student.studyGroups.class);
+  $('#dropdownInfosLastName').html(student.formteacher);
+
 });
+
+
