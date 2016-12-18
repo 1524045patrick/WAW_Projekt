@@ -420,7 +420,7 @@ li.firstlistitem {
 }
 
 .dropdownWEIS{
-    background-color: #001a3a;
+    background-color: white;
 }
 
 .dropdownWEIS >li a:hover{
@@ -429,6 +429,7 @@ li.firstlistitem {
 
 .dropdownWEIS> li a{
     color: white;
+    background-color: #001a3a;
 }
 
 #dropdownInfos{
