@@ -67,38 +67,28 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #illustrationLeft{
-    margin-top: 104px;
-    float: left;
+    height: 100%;
+     margin-top: 104px;
+    margin-left: 20px;
+    height: 100%;
+    left: 10px;
+    position: fixed;
+    padding: 10px;
+    top: 0px;
+    margin-bottom: 0px;
 
 }
 
 #illustrationRight{
     margin-top: 104px;
-    float: right;
     margin-right: 20px;
-
+    height: 100%;
+    right: 10px;
+    position: fixed;
+    padding: 10px;
+    top: 0px;
+    margin-bottom: 0px;
 }
 
 .navbar-brand {
@@ -594,6 +584,7 @@ ul.scroll-menu-2x {
     top: 0;
     right: 0;
     margin-right: 10px;
+    z-index: 100;
 }
 
 #scrollButtonDown {
@@ -602,6 +593,7 @@ ul.scroll-menu-2x {
     bottom : 0;
     right: 0;
     margin-right: 10px;
+     z-index: 100;
 }
 
 
@@ -675,7 +667,7 @@ ul.scroll-menu-2x {
     margin: 5px;
 }
 .flag{
-    position: absolute;
+    position: fixed;
     z-index: 1;
     margin-top: 60px;
     float: left;
@@ -689,3 +681,32 @@ ul.scroll-menu-2x {
 
 }
 
+#middleContent{
+    height: 100%;
+    width: 370px;
+    margin-top: 80px;
+    text-align: left;
+    display: inline-block;
+
+}
+.bubbles{
+    background-image: url("../images/contentTextBubble.png");
+    background-repeat:no-repeat;
+
+}
+#bubblesContent{
+    width: 340px;
+    height: 130px;
+    padding: 10px;
+
+
+}
+#außen100Pro{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+#bubbleImg{
+    float:right;
+}
