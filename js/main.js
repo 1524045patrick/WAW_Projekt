@@ -169,7 +169,7 @@ function changePicSave(){
     changePicJSON.headers.authorization = token.token;
     changePicJSON.url = "http://46.101.204.215:1337/api/V1/avatar/:"+picChange;
     $.ajax(changePicJSON).done(function (response) {
-   alter("done");
+        alter("done");
     });
 
     startBild();

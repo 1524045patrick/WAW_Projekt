@@ -71,6 +71,9 @@ body {
     #boxenPw{
         align-content: center;
     }
+    .pictures{
+        display: inline-block !important;
+    }
 
 }
 
@@ -665,6 +668,10 @@ ul.scroll-menu-2x {
 
 .pictures img{
     margin: 5px;
+}
+.pictures{
+    max-width: 747px;
+    margin: auto;
 }
 .flag{
     position: fixed;
