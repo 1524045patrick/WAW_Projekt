@@ -3,6 +3,7 @@ var tokenString = localStorage.getItem('token');
 var token = JSON.parse(tokenString);
 var student={};
 var avatare=[];
+var educationplan={};
 
 function profilBildAendern(){
     document.body.style.backgroundColor = "white";
@@ -333,9 +334,8 @@ function alleKompetenzen(){
 });
 }
 
-function educationplan(){
+function educationplanSet(){
     var string="";
-    var educationplan={};
     var educationplanJSON = {
         "async": false,
         "url": "",
@@ -345,18 +345,23 @@ function educationplan(){
      educationplanJSON.headers.authorization = token.token; educationplanJSON.url="http://46.101.204.215:1337/api/V1/educationalPlan";
       $.ajax(educationplanJSON).done(function (response) {
         educationplan=response;
+          console.log(educationplan);
     });
+    console.log(educationplan);
     if(educationplan.length-1>0){
     for(i=0;i<(educationplan.length-1);i++){
-            string+="<li ><a href=\"#\" onclick=\"educationplan("+educationplan[i]._id+")\">"+educationplan[i].name+"</a></li>";
+            string+="<li ><a href=\"#\" onclick=\"educationplanContent("+educationplan[i]._id+")\">"+educationplan[i].name+"</a></li>";
         }
-       string+="<li class=\"lastListItem\"><a href=\"#\" onclick=\"educationplan("+educationplan[i]._id+")\">"+educationplan[i].name+"</a></li>";
+       string+="<li class=\"lastListItem\"><a href=\"#\" onclick=\"educationplanContent("+educationplan[i]._id+")\">"+educationplan[i].name+"</a></li>";
     }
 
    $('#educationplan').html(string);
 
 }
 
+function educationplanContent(id){
+
+}
 
 
 
@@ -364,5 +369,5 @@ function educationplan(){
 $(document).ready(function(){
     login();
     setInfos();
-    educationplan();
+    educationplanSet();
 });
