@@ -171,14 +171,6 @@ function changePicSave(){
     login();
 };
 
-  login();
-
-$(document).ready(function(){
-    setInfos();
-});
-
-
-
 function kompetenz(id){
     var scrollNumber=0;
     switch(id){
@@ -301,8 +293,6 @@ function kompetenzCheck(id){
 });
 }
 
-
-
 function alleKompetenzen(){
     alleKompetenzenStyle();
     var bubbles="";
@@ -339,7 +329,40 @@ function alleKompetenzen(){
 
 }
     $(document).ready(function(){
-   $('#middleContent').html(bubbles+""+bubblesEnd);
+   $('#middleContent').html(bubbles);
 });
 }
 
+function educationplan(){
+    var string="";
+    var educationplan={};
+    var educationplanJSON = {
+        "async": false,
+        "url": "",
+        "method": "GET",
+        "headers": {
+            "authorization":""}}
+     educationplanJSON.headers.authorization = token.token; educationplanJSON.url="http://46.101.204.215:1337/api/V1/educationalPlan";
+      $.ajax(educationplanJSON).done(function (response) {
+        educationplan=response;
+    });
+    if(educationplan.length-1>0){
+    for(i=0;i<(educationplan.length-1);i++){
+            string+="<li ><a href=\"#\" onclick=\"educationplan("+educationplan[i]._id+")\">"+educationplan[i].name+"</a></li>";
+        }
+       string+="<li class=\"lastListItem\"><a href=\"#\" onclick=\"educationplan("+educationplan[i]._id+")\">"+educationplan[i].name+"</a></li>";
+    }
+
+   $('#educationplan').html(string);
+
+}
+
+
+
+
+
+$(document).ready(function(){
+    login();
+    setInfos();
+    educationplan();
+});
