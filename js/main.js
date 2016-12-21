@@ -4,6 +4,8 @@ var token = JSON.parse(tokenString);
 var student={};
 var avatare=[];
 var educationplan={};
+var scroll =1;
+var scrollCounter=0;
 
 function profilBildAendern(){
     document.body.style.backgroundColor = "white";
@@ -149,6 +151,10 @@ function setInfos(){
 
 }
 
+function setNameInfos(){
+    $('#name').html(student.forename+'<br>'+student.surname);
+}
+
 var picChange=avatare[student.avatarId];
 function changePic(pic){
     picChange=pic;
@@ -173,7 +179,6 @@ function changePicSave(){
 };
 
 function kompetenz(id){
-    var scrollNumber=0;
     switch(id){
         case 1:chapter1(); break;
         case 2:chapter2(); break;
@@ -192,7 +197,8 @@ function kompetenz(id){
         case 15:chapter15(); break;
         case 16:chapter16(); break;
     }
-
+ bindButtons();
+ scrollTop();
     var kompetenzJSON = {
         "async": false,
         "url": "",
@@ -211,10 +217,12 @@ function kompetenz(id){
     var number="";
     for(i=0;i<kompetenz.length;i++){
          if(kompetenz[i].checked){
-             bubbles+="<div class=\"bubbles\"><div id=\"bubblesContent\"><img id=\"bubbleImg\" src=\""
+              scrollCounter++;
+             bubbles+="<div id=\"scroll"+scrollCounter+"\" class=\"bubbles\"><div id=\"bubblesContent\"><img id=\"bubbleImg\" src=\""
         if(kompetenz[i].chapterId<10){
             number="0"+kompetenz[i].chapterId;
         }else{
+            scrollCounter++;
             number=""+kompetenz[i].chapterId;
         }
             bubbles+="images/chapter"+(number)+"/competenceDone.png\"><p id=\"bubbleText\">"
@@ -228,7 +236,6 @@ function kompetenz(id){
 }
 
 function kompetenzCheck(id){
-    var scrollNumber=0;
     switch(id){
         case 1:chapter1(); break;
         case 2:chapter2(); break;
@@ -247,7 +254,8 @@ function kompetenzCheck(id){
         case 15:chapter15(); break;
         case 16:chapter16(); break;
     }
-
+bindButtons();
+scrollTop();
     var kompetenzJSON = {
         "async": false,
         "url": "",
@@ -266,7 +274,8 @@ function kompetenzCheck(id){
     var number="";
     for(i=0;i<kompetenz.length;i++){
          if(kompetenz[i].checked){
-             bubbles+="<div class=\"bubbles\"><div id=\"bubblesContent\"><img id=\"bubbleImg\" src=\""
+             scrollCounter++;
+             bubbles+="<div id=\"scroll"+scrollCounter+"\" class=\"bubbles\"><div id=\"bubblesContent\"><img id=\"bubbleImg\" src=\""
         if(kompetenz[i].chapterId<10){
             number="0"+kompetenz[i].chapterId;
         }else{
@@ -279,7 +288,8 @@ function kompetenzCheck(id){
 
     for(i=0;i<kompetenz.length;i++){
         if(!kompetenz[i].checked){
-             bubbles+="<div class=\"bubbles\"><div id=\"bubblesContent\"><img id=\"bubbleImg\" src=\""
+            scrollCounter++;
+            bubbles+="<div id=\"scroll"+scrollCounter+"\" class=\"bubbles\"><div id=\"bubblesContent\"><img id=\"bubbleImg\" src=\""
         if(kompetenz[i].chapterId<10){
             number="0"+kompetenz[i].chapterId;
         }else{
@@ -296,6 +306,8 @@ function kompetenzCheck(id){
 
 function alleKompetenzen(){
     alleKompetenzenStyle();
+    bindButtons();
+    scrollTop();
     var bubbles="";
     var number="";
      var  kompetenz={};
@@ -317,7 +329,8 @@ function alleKompetenzen(){
 
     for(i=0;i<kompetenz.length;i++){
          if(kompetenz[i].checked){
-             bubbles+="<div class=\"bubbles\"><div id=\"bubblesContent\"><img id=\"bubbleImg\" src=\""
+             scrollCounter++;
+             bubbles+="<div id=\"scroll"+scrollCounter+"\" class=\"bubbles\"><div id=\"bubblesContent\"><img id=\"bubbleImg\" src=\""
         if(kompetenz[i].chapterId<10){
             number="0"+kompetenz[i].chapterId;
         }else{
@@ -345,9 +358,7 @@ function educationplanSet(){
      educationplanJSON.headers.authorization = token.token; educationplanJSON.url="http://46.101.204.215:1337/api/V1/educationalPlan";
       $.ajax(educationplanJSON).done(function (response) {
         educationplan=response;
-          console.log(educationplan);
     });
-    console.log(educationplan);
     if(educationplan.length-1>0){
     for(i=0;i<(educationplan.length-1);i++){
             string+="<li ><a href=\"#\" onclick=\"educationplanContent("+educationplan[i]._id+")\">"+educationplan[i].name+"</a></li>";
@@ -362,6 +373,45 @@ function educationplanSet(){
 function educationplanContent(id){
 
 }
+
+function bindButtons(){
+ scrollCounter=0;
+ scroll =1;
+    $(document).ready(function(){
+    $("#scrollButtonUp").click(function() {
+    if(scroll>1){
+       scroll--;
+    }
+    $('html, body').animate({
+        scrollTop: $("#scroll"+scroll).offset().top -65
+    }, 500);
+        console.log(scroll);
+});
+    $("#scrollButtonDown").click(function() {
+    if(scroll<scrollCounter){
+        scroll++;
+    }
+        $('html, body').animate({
+        scrollTop: $("#scroll"+scroll).offset().top -65
+    }, 500);
+        console.log(scroll);
+    });
+
+});
+}
+
+function scrollTop(){
+    $(document).ready(function(){
+			$('body,html').animate({
+				scrollTop: 0
+			}, 0);
+			return false;
+    });
+}
+
+
+
+
 
 
 

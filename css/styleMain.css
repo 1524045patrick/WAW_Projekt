@@ -409,19 +409,6 @@ li.firstlistitem {
      background-color: #001a3a;
 }
 
-.dropdownWEIS{
-    background-color: white;
-}
-
-.dropdownWEIS >li a:hover{
-    background-color: #4565ad;
-}
-
-.dropdownWEIS> li a{
-    color: white;
-    background-color: #001a3a;
-}
-
 #dropdownInfos{
     background-color: #001a3a;
     text-align: right;
