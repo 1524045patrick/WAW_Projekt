@@ -1,4 +1,12 @@
+body {
+    background:white;
+}
 
+@media screen and (max-width: 767px) {
+    .profile-img {
+        display: none;
+    }
+}
 #checkFooter{
     color:#8da6d6;
     padding: 5px;

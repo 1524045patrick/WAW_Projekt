@@ -10,7 +10,7 @@ body {
     #illustrationRight,#illustrationLeft, #scrollButtonUp, #scrollButtonDown, #footer, #rightDrop:after,#rightDrop:before, .firstDropRight:after,.firstDropRight:before, #leftDrop:after, #leftDrop:before, .firstDropLeft:after, .firstDropLeft:before, #trennbalken, .firstlistitem, .navbar-brand, .flag, .leftDrop:before, .leftDrop:after, .rightDrop:before, .rightDrop:after  {
         display: none;
     }
-    #burgerTextBild{
+    .burgerTextBild{
         display: inline-block !important;
         padding-left: 10px;
         font-size: 13pt;
@@ -57,11 +57,24 @@ body {
         padding-left: 10px;
     }
 
-
+    #boxSeiten{
+     display: block !important;
+    text-align: center !important;
+    margin-right: auto !important;
+    margin: auto;
+    }
+    #boxMittig{
+     display: block !important;
+        text-align: center !important;
+        margin: auto;
+    }
+    #boxenPw{
+        align-content: center;
+    }
 
 }
 
-#burgerTextBild{
+.burgerTextBild{
     display: none;
 
 }

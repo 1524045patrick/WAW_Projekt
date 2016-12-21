@@ -148,11 +148,9 @@ function setInfos(){
   $("#klassePicBig").attr("src",student.studyGroups.imageUrlInactive);
   $('#klasseName').html("Klasse<br>"+student.studyGroups.class);
   $('#dropdownInfosLastName').html(student.formteacher);
-
-}
-
-function setNameInfos(){
-    $('#name').html(student.forename+'<br>'+student.surname);
+  $('#mobileName').html(student.forename+'  '+student.surname);
+  $('#mobileSchule').html(student.school.name);
+  $('#mobileKlasse').html("Klasse: "+student.studyGroups.class);
 }
 
 var picChange=avatare[student.avatarId];
