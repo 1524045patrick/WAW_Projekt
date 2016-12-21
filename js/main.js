@@ -229,6 +229,61 @@ function kompetenz(id){
          }
     }
 
+    $(document).ready(function(){
+   $('#middleContent').html(bubbles);
+});
+}
+
+function kompetenzCheck(id){
+    var scrollNumber=0;
+    switch(id){
+        case 1:chapter1(); break;
+        case 2:chapter2(); break;
+        case 3:chapter3(); break;
+        case 4:chapter4(); break;
+        case 5:chapter5(); break;
+        case 6:chapter6(); break;
+        case 7:chapter7(); break;
+        case 8:chapter8(); break;
+        case 9:chapter9(); break;
+        case 10:chapter10(); break;
+        case 11:chapter11(); break;
+        case 12:chapter12(); break;
+        case 13:chapter13(); break;
+        case 14:chapter14(); break;
+        case 15:chapter15(); break;
+        case 16:chapter16(); break;
+    }
+
+    var kompetenzJSON = {
+        "async": false,
+        "url": "",
+        "method": "GET",
+        "headers": {
+            "authorization":""}}
+
+     kompetenzJSON.headers.authorization = token.token;
+     kompetenzJSON.url = "http://46.101.204.215:1337/api/V1/studentcompetence?checked=false&chapterId="+id;
+   var  kompetenz={};
+    $.ajax(kompetenzJSON).done(function (response) {
+        kompetenz=response;
+    });
+
+    var bubbles="";
+    var number="";
+    for(i=0;i<kompetenz.length;i++){
+         if(kompetenz[i].checked){
+             bubbles+="<div class=\"bubbles\"><div id=\"bubblesContent\"><img id=\"bubbleImg\" src=\""
+        if(kompetenz[i].chapterId<10){
+            number="0"+kompetenz[i].chapterId;
+        }else{
+            number=""+kompetenz[i].chapterId;
+        }
+            bubbles+="images/chapter"+(number)+"/competenceDone.png\"><p id=\"bubbleText\">"
+            bubbles+=kompetenz[i].studentText+"</p></div></div>"
+         }
+    }
+
     for(i=0;i<kompetenz.length;i++){
         if(!kompetenz[i].checked){
              bubbles+="<div class=\"bubbles\"><div id=\"bubblesContent\"><img id=\"bubbleImg\" src=\""
@@ -251,7 +306,6 @@ function kompetenz(id){
 function alleKompetenzen(){
     alleKompetenzenStyle();
     var bubbles="";
-    var bubblesEnd="";
     var number="";
      var  kompetenz={};
     var kompetenzJSON = {
@@ -283,18 +337,6 @@ function alleKompetenzen(){
          }
     }
 
-    for(i=0;i<kompetenz.length;i++){
-        if(!kompetenz[i].checked){
-             bubblesEnd+="<div class=\"bubbles\"><div id=\"bubblesContent\"><img id=\"bubbleImg\" src=\""
-        if(kompetenz[i].chapterId<10){
-            number="0"+kompetenz[i].chapterId;
-        }else{
-            number=""+kompetenz[i].chapterId;
-        }
-            bubblesEnd+="images/chapter"+(number)+"/competenceUndone.png\"><p id=\"bubbleText\">"
-            bubblesEnd+=kompetenz[i].studentText+"</p></div></div>"
-    }
-    }
 }
     $(document).ready(function(){
    $('#middleContent').html(bubbles+""+bubblesEnd);
