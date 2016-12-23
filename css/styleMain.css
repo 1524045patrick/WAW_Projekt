@@ -7,7 +7,7 @@ body {
     body{
         background-color: white;
     }
-    #illustrationRight,#illustrationLeft, #scrollButtonUp, #scrollButtonDown, #footer, #rightDrop:after,#rightDrop:before, .firstDropRight:after,.firstDropRight:before, #leftDrop:after, #leftDrop:before, .firstDropLeft:after, .firstDropLeft:before, #trennbalken, .firstlistitem, .navbar-brand, .flag, .leftDrop:before, .leftDrop:after, .rightDrop:before, .rightDrop:after  {
+    #illustrationRight,#illustrationLeft, #scrollButtonUp, #scrollButtonDown, #footer, #rightDrop:after,#rightDrop:before, .firstDropRight:after,.firstDropRight:before, #leftDrop:after, #leftDrop:before, .firstDropLeft:after, .firstDropLeft:before, #trennbalken, .firstlistitem, .flag, .leftDrop:before, .leftDrop:after, .rightDrop:before, .rightDrop:after  {
         display: none;
     }
     .burgerTextBild{
@@ -74,6 +74,8 @@ body {
     .pictures{
         display: inline-block !important;
     }
+
+
 
 }
 
