@@ -11,8 +11,9 @@ function profilBildAendern(){
     document.body.style.backgroundColor = "white";
     $('#content').load('ChangeBody.html #profilBildAendern');
     $(document).ready(function() {
+    $(document).ready(function() {
         $("#profilePicChange").attr("src",avatare[student.avatarId].avatarBigUrl);
-    });
+    }); });
 }
 
 function passwortAendern(){
@@ -224,7 +225,21 @@ function kompetenz(id){
             number=""+kompetenz[i].chapterId;
         }
             bubbles+="images/chapter"+(number)+"/competenceDone.png\"><p id=\"bubbleText\">"
-            bubbles+=kompetenz[i].studentText+"</p></div></div>"
+            bubbles+=kompetenz[i].studentText+"</p>"
+             if(kompetenz[i].number<1000){
+               if(kompetenz[i].number<100){
+                   if(kompetenz[i].number<10){
+                       numberID="000"+kompetenz[i].number;
+                   }else{
+                       numberID="00"+kompetenz[i].number;
+                   }
+               }else{
+                    numberID="0"+kompetenz[i].number;
+               }
+           }else{
+               numberID=kompetenz[i].number;
+           }
+            bubbles+="<div id=\"bubbleID\"><p>"+number+"."+numberID+"</p></div></div></div>"
          }
     }
 
@@ -270,6 +285,7 @@ scrollTop();
 
     var bubbles="";
     var number="";
+    var numberID="";
     for(i=0;i<kompetenz.length;i++){
          if(kompetenz[i].checked){
              scrollCounter++;
@@ -280,7 +296,21 @@ scrollTop();
             number=""+kompetenz[i].chapterId;
         }
             bubbles+="images/chapter"+(number)+"/competenceDone.png\"><p id=\"bubbleText\">"
-            bubbles+=kompetenz[i].studentText+"</p></div></div>"
+            bubbles+=kompetenz[i].studentText+"</p>"
+             if(kompetenz[i].number<1000){
+               if(kompetenz[i].number<100){
+                   if(kompetenz[i].number<10){
+                       numberID="000"+kompetenz[i].number;
+                   }else{
+                       numberID="00"+kompetenz[i].number;
+                   }
+               }else{
+                    numberID="0"+kompetenz[i].number;
+               }
+           }else{
+               numberID=kompetenz[i].number;
+           }
+            bubbles+="<div id=\"bubbleID\"><p>"+number+"."+numberID+"</p></div></div></div>"
          }
     }
 
@@ -294,7 +324,22 @@ scrollTop();
             number=""+kompetenz[i].chapterId;
         }
             bubbles+="images/chapter"+(number)+"/competenceUndone.png\"><p id=\"bubbleText\">"
-            bubbles+=kompetenz[i].studentText+"</p></div></div>"
+            bubbles+=kompetenz[i].studentText+"</p>"
+
+           if(kompetenz[i].number<1000){
+               if(kompetenz[i].number<100){
+                   if(kompetenz[i].number<10){
+                       numberID="000"+kompetenz[i].number;
+                   }else{
+                       numberID="00"+kompetenz[i].number;
+                   }
+               }else{
+                    numberID="0"+kompetenz[i].number;
+               }
+           }else{
+               numberID=kompetenz[i].number;
+           }
+            bubbles+="<div id=\"bubbleID\"><p>"+number+"."+numberID+"</p></div></div></div>"
          }
     }
     $(document).ready(function(){
@@ -308,6 +353,7 @@ function alleKompetenzen(){
     scrollTop();
     var bubbles="";
     var number="";
+    var numberID="";
      var  kompetenz={};
     var kompetenzJSON = {
         "async": false,
@@ -317,7 +363,7 @@ function alleKompetenzen(){
             "authorization":""}}
      kompetenzJSON.headers.authorization = token.token;
 
-     for(a=0;a<16;a++){
+     for(a=1;a<=16;a++){
     kompetenzJSON.url = "http://46.101.204.215:1337/api/V1/studentcompetence?checked=false&chapterId="+a;
 
     $.ajax(kompetenzJSON).done(function (response) {
@@ -335,7 +381,21 @@ function alleKompetenzen(){
             number=""+kompetenz[i].chapterId;
         }
             bubbles+="images/chapter"+(number)+"/competenceDone.png\"><p id=\"bubbleText\">"
-            bubbles+=kompetenz[i].studentText+"</p></div></div>"
+            bubbles+=kompetenz[i].studentText+"</p>"
+             if(kompetenz[i].number<1000){
+               if(kompetenz[i].number<100){
+                   if(kompetenz[i].number<10){
+                       numberID="000"+kompetenz[i].number;
+                   }else{
+                       numberID="00"+kompetenz[i].number;
+                   }
+               }else{
+                    numberID="0"+kompetenz[i].number;
+               }
+           }else{
+               numberID=kompetenz[i].number;
+           }
+            bubbles+="<div id=\"bubbleID\"><p>"+number+"."+numberID+"</p></div></div></div>"
          }
     }
 
@@ -392,7 +452,6 @@ function bindButtons(){
         $('html, body').animate({
         scrollTop: $("#scroll"+scroll).offset().top -65
     }, 500);
-        console.log(scroll);
     });
 
 });
@@ -406,11 +465,6 @@ function scrollTop(){
 			return false;
     });
 }
-
-
-
-
-
 
 
 

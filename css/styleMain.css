@@ -1,6 +1,6 @@
 body {
     height: 100%;
-    background:white;
+    background:blue;
 }
 
 @media screen and (max-width: 767px) {
@@ -87,7 +87,7 @@ body {
 
 #illustrationLeft{
     height: 100%;
-     margin-top: 104px;
+    margin-top: 104px;
     margin-left: 20px;
     height: 100%;
     left: 10px;
@@ -95,6 +95,7 @@ body {
     padding: 10px;
     top: 0px;
     margin-bottom: 0px;
+    z-index: -100;
 
 }
 
@@ -107,6 +108,7 @@ body {
     padding: 10px;
     top: 0px;
     margin-bottom: 0px;
+     z-index: -100;
 }
 
 .navbar-brand {
@@ -707,6 +709,7 @@ ul.scroll-menu-2x {
     width: 340px;
     height: 130px;
     padding: 10px;
+    position: relative;
 
 
 }
@@ -719,3 +722,13 @@ ul.scroll-menu-2x {
 #bubbleImg{
     float:right;
 }
+
+
+#bubbleID{
+  position: absolute;
+  bottom: 0;
+    font-size: 7.5pt;
+    padding-bottom: 10px;
+    color: #001a3a ;
+}
+

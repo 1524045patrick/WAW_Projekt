@@ -4,7 +4,7 @@ function loginButton(){
     var tokenJSON = {
         "async": false,
         "url": "http://46.101.204.215:1337/api/V1/login",
-        "method": "POST" }
+        "method": "PUT" }
 
     //Befehl um token zu bekommen
     $.ajax(tokenJSON).done(function (response) {
