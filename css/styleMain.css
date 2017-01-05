@@ -1,6 +1,6 @@
 body {
     height: 100%;
-    background:blue;
+    background:white;
 }
 
 @media screen and (max-width: 767px) {
@@ -399,16 +399,7 @@ li.firstlistitem {
     content: url("/images/achievedCompetences-active.png")
 }
 
-.open .dropdown-toggle-profil{
 
-}
-
-.open .dropdown-toggle-school{
-    content: url("/images/school/school-green-active.png")
-}
-.open .dropdown-toggle-studyGroup{
-    content: url("/images/studyGroup/studyGroup_1a_active.png")
-}
 .open .dropdown-toggle-help{
     content: url("/images/help-active.png")
 }
@@ -702,6 +693,7 @@ ul.scroll-menu-2x {
 .bubbles{
     background-image: url("../images/contentTextBubble.png");
     background-repeat:no-repeat;
+    width: 370px;
 
 }
 #bubblesContent{
@@ -711,6 +703,7 @@ ul.scroll-menu-2x {
     position: relative;
 
 
+
 }
 #außen100Pro{
     height: 100%;
@@ -718,8 +711,9 @@ ul.scroll-menu-2x {
     position: absolute;
     text-align: center;
 }
-#bubbleImg{
+.bubbleImg{
     float:right;
+    margin-top: 5px;
 }
 
 
@@ -731,18 +725,20 @@ ul.scroll-menu-2x {
     color: #001a3a ;
 }
 
-#links{
-    width: 250px;
-    height: 50px;
-    background-color: red;
-     display: inline-block;
-}
 
 #blubss{
     width: 370px;
-     display: inline-block;
+
 }
 
+#rechtsAb{
+    position: absolute;
+    display: inline-block;
+    margin-left: 350px;
+    margin-top: -5;
+    display: none;
+
+}
 
 
 #rechts
@@ -756,8 +752,10 @@ background: #001a3a;
 -moz-border-radius: 10px;
 border-radius: 10px;
 border: #FFFFFF solid 3px;
-    display: inline-block;
+display: inline-block;
 color: white;
+
+
 }
 
 #rechts:after
@@ -787,3 +785,6 @@ z-index: 0;
 left: -13px;
 top: 20px;
 }
+
+
+

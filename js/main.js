@@ -206,7 +206,7 @@ function kompetenz(id){
             "authorization":""}}
 
      kompetenzJSON.headers.authorization = token.token;
-     kompetenzJSON.url = "http://46.101.204.215:1337/api/V1/studentcompetence?checked=false&chapterId="+id;
+     kompetenzJSON.url = "http://46.101.204.215:1337/api/V1/studentcompetence?checked=true&chapterId="+id;
    var  kompetenz={};
     $.ajax(kompetenzJSON).done(function (response) {
         kompetenz=response;
@@ -215,17 +215,16 @@ function kompetenz(id){
     var bubbles="";
     var number="";
     for(i=0;i<kompetenz.length;i++){
-         if(kompetenz[i].checked){
               scrollCounter++;
-             bubbles+="<div id=\"scroll"+scrollCounter+"\" class=\"bubbles\"><div id=\"bubblesContent\"><img id=\"bubbleImg\" src=\""
+             bubbles+="<div id=\"scroll"+scrollCounter+"\" class=\"bubbles\"><div id=\"bubblesContent\"><div><img class=\"bubbleImg\" src=\""
         if(kompetenz[i].chapterId<10){
             number="0"+kompetenz[i].chapterId;
         }else{
             scrollCounter++;
             number=""+kompetenz[i].chapterId;
         }
-            bubbles+="images/chapter"+(number)+"/competenceDone.png\"><p id=\"bubbleText\">"
-            bubbles+=kompetenz[i].studentText+"</p>"
+            bubbles+="images/chapter"+(number)+"/competenceDone.png\"><div id=\"rechtsAb\"><div id=\"rechts\">Du hast diese Kompetenz am<br>"+kompetenz[i].fromDate+" erreicht!</div></div></div><div id=\"bubbleText\"><p>"
+            bubbles+=kompetenz[i].studentText+"</p></div>"
              if(kompetenz[i].number<1000){
                if(kompetenz[i].number<100){
                    if(kompetenz[i].number<10){
@@ -240,11 +239,12 @@ function kompetenz(id){
                numberID=kompetenz[i].number;
            }
             bubbles+="<div id=\"bubbleID\"><p>"+number+"."+numberID+"</p></div></div></div>"
-         }
+
     }
 
     $(document).ready(function(){
    $('#middleContent').html(bubbles);
+        hoverBubbles();
 });
 }
 
@@ -286,17 +286,18 @@ scrollTop();
     var bubbles="";
     var number="";
     var numberID="";
-    for(i=0;i<kompetenz.length;i++){
-         if(kompetenz[i].checked){
-             scrollCounter++;
-             bubbles+="<div id=\"scroll"+scrollCounter+"\" class=\"bubbles\"><div id=\"bubblesContent\"><img id=\"bubbleImg\" src=\""
+     for(i=0;i<kompetenz.length;i++){
+        if(kompetenz[i].checked){
+            scrollCounter++;
+             bubbles+="<div id=\"scroll"+scrollCounter+"\" class=\"bubbles\"><div id=\"bubblesContent\"><div><img class=\"bubbleImg\" src=\""
         if(kompetenz[i].chapterId<10){
             number="0"+kompetenz[i].chapterId;
         }else{
+            scrollCounter++;
             number=""+kompetenz[i].chapterId;
         }
-            bubbles+="images/chapter"+(number)+"/competenceDone.png\"><p id=\"bubbleText\">"
-            bubbles+=kompetenz[i].studentText+"</p>"
+            bubbles+="images/chapter"+(number)+"/competenceDone.png\"><div id=\"rechtsAb\"><div id=\"rechts\">Du hast diese Kompetenz am<br>"+kompetenz[i].fromDate+" erreicht!</div></div></div><div id=\"bubbleText\"><p>"
+            bubbles+=kompetenz[i].studentText+"</p></div>"
              if(kompetenz[i].number<1000){
                if(kompetenz[i].number<100){
                    if(kompetenz[i].number<10){
@@ -311,13 +312,13 @@ scrollTop();
                numberID=kompetenz[i].number;
            }
             bubbles+="<div id=\"bubbleID\"><p>"+number+"."+numberID+"</p></div></div></div>"
-         }
+        }
     }
 
     for(i=0;i<kompetenz.length;i++){
         if(!kompetenz[i].checked){
             scrollCounter++;
-            bubbles+="<div id=\"scroll"+scrollCounter+"\" class=\"bubbles\"><div id=\"bubblesContent\"><img id=\"bubbleImg\" src=\""
+            bubbles+="<div id=\"scroll"+scrollCounter+"\" class=\"bubbles\"><div id=\"bubblesContent\"><img class=\"bubbleImg\" src=\""
         if(kompetenz[i].chapterId<10){
             number="0"+kompetenz[i].chapterId;
         }else{
@@ -344,6 +345,7 @@ scrollTop();
     }
     $(document).ready(function(){
    $('#middleContent').html(bubbles);
+        hoverBubbles();
 });
 }
 
@@ -364,7 +366,7 @@ function alleKompetenzen(){
      kompetenzJSON.headers.authorization = token.token;
 
      for(a=1;a<=16;a++){
-    kompetenzJSON.url = "http://46.101.204.215:1337/api/V1/studentcompetence?checked=false&chapterId="+a;
+    kompetenzJSON.url = "http://46.101.204.215:1337/api/V1/studentcompetence?checked=true&chapterId="+a;
 
     $.ajax(kompetenzJSON).done(function (response) {
         kompetenz=response;
@@ -372,16 +374,16 @@ function alleKompetenzen(){
 
 
     for(i=0;i<kompetenz.length;i++){
-         if(kompetenz[i].checked){
-             scrollCounter++;
-             bubbles+="<div id=\"scroll"+scrollCounter+"\" class=\"bubbles\"><div id=\"bubblesContent\"><img id=\"bubbleImg\" src=\""
+              scrollCounter++;
+             bubbles+="<div id=\"scroll"+scrollCounter+"\" class=\"bubbles\"><div id=\"bubblesContent\"><div><img class=\"bubbleImg\" src=\""
         if(kompetenz[i].chapterId<10){
             number="0"+kompetenz[i].chapterId;
         }else{
+            scrollCounter++;
             number=""+kompetenz[i].chapterId;
         }
-            bubbles+="images/chapter"+(number)+"/competenceDone.png\"><p id=\"bubbleText\">"
-            bubbles+=kompetenz[i].studentText+"</p>"
+            bubbles+="images/chapter"+(number)+"/competenceDone.png\"><div id=\"rechtsAb\"><div id=\"rechts\">Du hast diese Kompetenz am<br>"+kompetenz[i].fromDate+" erreicht!</div></div></div><div id=\"bubbleText\"><p>"
+            bubbles+=kompetenz[i].studentText+"</p></div>"
              if(kompetenz[i].number<1000){
                if(kompetenz[i].number<100){
                    if(kompetenz[i].number<10){
@@ -396,12 +398,13 @@ function alleKompetenzen(){
                numberID=kompetenz[i].number;
            }
             bubbles+="<div id=\"bubbleID\"><p>"+number+"."+numberID+"</p></div></div></div>"
-         }
+
     }
 
 }
     $(document).ready(function(){
    $('#middleContent').html(bubbles);
+        hoverBubbles();
 });
 }
 
@@ -468,8 +471,38 @@ function scrollTop(){
 
 
 
+function hoverBubbles(){
+$(".bubbleImg").hover(
+    function() {
+       $(this).parent().children('#rechtsAb').show();
+    },
+    function(){
+        $(this).parent().children('#rechtsAb').hide();
+    }
+);
+}
+
+function dynamischeBilderDropdown(){
+    var sheet = document.createElement('style')
+    sheet.innerHTML =
+        ".open .dropdown-toggle-profil {content:url(\""
+        +avatare[(student.avatarId)].avatarUrl +"\")}"
+        +".open .dropdown-toggle-school {content:url(\""
+        +student.school.imageUrl+"\")}"
+        +".open .dropdown-toggle-studyGroup {content:url(\""
+        +student.studyGroups.imageUrl +"\")}";
+
+
+    document.body.appendChild(sheet);
+
+}
+
+
+
+
 $(document).ready(function(){
     login();
     setInfos();
     educationplanSet();
+    dynamischeBilderDropdown();
 });
