@@ -168,13 +168,22 @@ function changePicSave(){
         "headers": {
             "authorization":""}}
     changePicJSON.headers.authorization = token.token;
-    changePicJSON.url = "http://46.101.204.215:1337/api/V1/avatar/:"+picChange;
+    changePicJSON.url = "http://46.101.204.215:1337/api/V1/avatar/"+picChange;
     $.ajax(changePicJSON).done(function (response) {
-        alter("done");
+        if(response.message ="Avatar wurde erfolgreich geändert"){
+               startBild();
+                login();
+                $(document).ready(function(){
+                    $('#fehlermeldungContainer').load('ChangeBody.html #error3');
+                      $(document).ready(function(){
+                    $('#textFieldError').html(response.message);});
+
+                });
+
+        }
     });
 
-    startBild();
-    login();
+
 };
 
 function kompetenz(id){

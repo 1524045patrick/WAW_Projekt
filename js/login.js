@@ -1,20 +1,40 @@
 function loginButton(){
 
-    //JSON um den Token zu bekommen
-    var tokenJSON = {
-        "async": false,
-        "url": "http://46.101.204.215:1337/api/V1/login",
-        "method": "PUT" }
+   if($("#emailinput").val()!=""&&$("#passwordinput").val()!=""){
 
-    //Befehl um token zu bekommen
-    $.ajax(tokenJSON).done(function (response) {
-      localStorage.setItem('token', JSON.stringify(response));
-    });
+        var form = new FormData();
+        form.append("username", $("#emailinput").val());
+        form.append("password", $("#passwordinput").val());
 
-        window.document.location.href = "main.html";
+        var settings = {
+            "url": "http://46.101.204.215:1337/api/V1/login",
+            "method": "PUT",
+            "processData": false,
+            "contentType": false,
+            "mimeType": "multipart/form-data",
+            "data": form
+        }
 
+
+        $.ajax(settings).done(function (response) {
+                window.document.location.href = "main.html";
+                localStorage.setItem('token', response);})
+        .fail(function(){
+           $('#fehlermeldungContainer').load('ChangeBody.html #error1');
+                $(document).ready(function(){
+                    $(document).ready(function(){
+                        $('#textFieldError').html("Benutzername oder Passwort falsch!");
+                        });});
+        })
+        ;
+   }else{
+        $('#fehlermeldungContainer').load('ChangeBody.html #error1');
+          $(document).ready(function(){
+               $(document).ready(function(){
+                    $('#textFieldError').html("Geben Sie Benutzername und Passwort ein!");
+                });});
+   }
 }
-
 
 function error1(){
     $('#fehlermeldungContainer').load('ChangeBody.html #error1');
