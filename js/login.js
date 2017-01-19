@@ -23,8 +23,9 @@ function loginButton(){
            $('#fehlermeldungContainer').load('ChangeBody.html #error1');
                 $(document).ready(function(){
                     $(document).ready(function(){
+                         $(document).ready(function(){
                         $('#textFieldError').html("Benutzername oder Passwort falsch!");
-                        });});
+                        });});});
         })
         ;
    }else{
