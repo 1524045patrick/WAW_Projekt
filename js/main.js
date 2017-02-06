@@ -186,6 +186,8 @@ function changePicSave(){
 
 };
 
+
+
 function kompetenz(id){
     switch(id){
         case 1:chapter1(); break;
@@ -222,6 +224,17 @@ function kompetenz(id){
     });
 
     var bubbles="";
+
+    for(i=0;i<kompetenz.length;i++){
+        bubbles+=getBubble(kompetenz[i],true);
+    }
+
+
+
+
+
+    /*
+    var bubbles="";
     var number="";
     for(i=0;i<kompetenz.length;i++){
               scrollCounter++;
@@ -250,14 +263,14 @@ function kompetenz(id){
             bubbles+="<div id=\"bubbleID\"><p>"+number+"."+numberID+"</p></div></div></div>"
 
     }
-
+        */
     $(document).ready(function(){
    $('#middleContent').html(bubbles);
         hoverBubbles();
 });
 }
 
-function kompetenzCheck(id){
+function kompetenzAlle(id){
     switch(id){
         case 1:chapter1(); break;
         case 2:chapter2(); break;
@@ -292,66 +305,23 @@ scrollTop();
         kompetenz=response;
     });
 
-    var bubbles="";
-    var number="";
-    var numberID="";
+    var bubblesDone="";
+    var bubblesUndone="";
+    var bubblesEducation="";
+
+
      for(i=0;i<kompetenz.length;i++){
-        if(kompetenz[i].checked){
-            scrollCounter++;
-             bubbles+="<div id=\"scroll"+scrollCounter+"\" class=\"bubbles\"><div id=\"bubblesContent\"><div><img class=\"bubbleImg\" src=\""
-        if(kompetenz[i].chapterId<10){
-            number="0"+kompetenz[i].chapterId;
-        }else{
-            scrollCounter++;
-            number=""+kompetenz[i].chapterId;
+        if(false){
+            bubblesEducation+=getBubbleEducation();
+        }else
+            if(kompetenz[i].checked){
+                bubblesDone+=getBubble(kompetenz[i],true);
+            }else{
+                bubblesUndone+=getBubble(kompetenz[i],false);
+            }
         }
-            bubbles+="images/chapter"+(number)+"/competenceDone.png\"><div id=\"rechtsAb\"><div id=\"rechts\">Du hast diese Kompetenz am<br>"+kompetenz[i].fromDate+" erreicht!</div></div></div><div id=\"bubbleText\"><p>"
-            bubbles+=kompetenz[i].studentText+"</p></div>"
-             if(kompetenz[i].number<1000){
-               if(kompetenz[i].number<100){
-                   if(kompetenz[i].number<10){
-                       numberID="000"+kompetenz[i].number;
-                   }else{
-                       numberID="00"+kompetenz[i].number;
-                   }
-               }else{
-                    numberID="0"+kompetenz[i].number;
-               }
-           }else{
-               numberID=kompetenz[i].number;
-           }
-            bubbles+="<div id=\"bubbleID\"><p>"+number+"."+numberID+"</p></div></div></div>"
-        }
-    }
+     var bubbles = bubblesDone+bubblesEducation+bubblesUndone;
 
-    for(i=0;i<kompetenz.length;i++){
-        if(!kompetenz[i].checked){
-            scrollCounter++;
-            bubbles+="<div id=\"scroll"+scrollCounter+"\" class=\"bubbles\"><div id=\"bubblesContent\"><img class=\"bubbleImg\" src=\""
-        if(kompetenz[i].chapterId<10){
-            number="0"+kompetenz[i].chapterId;
-        }else{
-            number=""+kompetenz[i].chapterId;
-        }
-            bubbles+="images/chapter"+(number)+"/competenceUndone.png\"><p id=\"bubbleText\">"
-            bubbles+=kompetenz[i].studentText+"</p>"
-
-           if(kompetenz[i].number<1000){
-               if(kompetenz[i].number<100){
-                   if(kompetenz[i].number<10){
-                       numberID="000"+kompetenz[i].number;
-                   }else{
-                       numberID="00"+kompetenz[i].number;
-                   }
-               }else{
-                    numberID="0"+kompetenz[i].number;
-               }
-           }else{
-               numberID=kompetenz[i].number;
-           }
-            bubbles+="<div id=\"bubbleID\"><p>"+number+"."+numberID+"</p></div></div></div>"
-         }
-    }
     $(document).ready(function(){
    $('#middleContent').html(bubbles);
         hoverBubbles();
@@ -383,30 +353,7 @@ function alleKompetenzen(){
 
 
     for(i=0;i<kompetenz.length;i++){
-              scrollCounter++;
-             bubbles+="<div id=\"scroll"+scrollCounter+"\" class=\"bubbles\"><div id=\"bubblesContent\"><div><img class=\"bubbleImg\" src=\""
-        if(kompetenz[i].chapterId<10){
-            number="0"+kompetenz[i].chapterId;
-        }else{
-            scrollCounter++;
-            number=""+kompetenz[i].chapterId;
-        }
-            bubbles+="images/chapter"+(number)+"/competenceDone.png\"><div id=\"rechtsAb\"><div id=\"rechts\">Du hast diese Kompetenz am<br>"+kompetenz[i].fromDate+" erreicht!</div></div></div><div id=\"bubbleText\"><p>"
-            bubbles+=kompetenz[i].studentText+"</p></div>"
-             if(kompetenz[i].number<1000){
-               if(kompetenz[i].number<100){
-                   if(kompetenz[i].number<10){
-                       numberID="000"+kompetenz[i].number;
-                   }else{
-                       numberID="00"+kompetenz[i].number;
-                   }
-               }else{
-                    numberID="0"+kompetenz[i].number;
-               }
-           }else{
-               numberID=kompetenz[i].number;
-           }
-            bubbles+="<div id=\"bubbleID\"><p>"+number+"."+numberID+"</p></div></div></div>"
+              bubbles+=getBubble(kompetenz[i],true);
 
     }
 
@@ -416,6 +363,48 @@ function alleKompetenzen(){
         hoverBubbles();
 });
 }
+
+
+function getBubble(kompetenz, done){
+
+    var bubble="";
+    var number="";
+    var chapter="";
+    scrollCounter++;
+    if(kompetenz.number<1000){
+               if(kompetenz.number<100){
+                   if(kompetenz.number<10){
+                       number="000"+kompetenz.number;
+                   }else{
+                       number="00"+kompetenz.number;
+                   }
+               }else{
+                    number="0"+kompetenz.number;
+               }
+           }else{
+               number=kompetenz.number;
+           }
+
+    (kompetenz.chapterId<10)?(chapter="0"+kompetenz.chapterId):(chapter=""+kompetenz.chapterId);
+
+
+        bubble+="<div id=\"scroll"+scrollCounter+"\" class=\"bubbles\"><div id=\"bubblesContent\"><div><img class=\"bubbleImg\" src=\""
+        if(done){
+            bubble+="images/chapter"+(chapter)+"/competenceDone.png\"><div id=\"rechtsAb\"><div id=\"rechts\">Du hast diese Kompetenz      am<br>"+kompetenz.fromDate+" erreicht!</div></div></div><div id=\"bubbleText\"><p>"
+        }else{
+            bubble+="images/chapter"+(chapter)+"/competenceUndone.png\">"
+        }
+        bubble+=kompetenz.studentText+"</p></div>"
+        bubble+="<div id=\"bubbleID\"><p>"+chapter+"."+number+"</p></div></div></div>"
+
+    return bubble;
+}
+
+
+function getBubbleEducation(){
+
+}
+
 
 function educationplanSet(){
     var string="";
