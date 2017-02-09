@@ -455,8 +455,6 @@ li.firstlistitem {
     font-size: 10pt;
 }
 
-
-
 .box {
     margin: auto;
     max-width: 300px;
@@ -594,14 +592,7 @@ ul.scroll-menu-2x {
      z-index: 100;
 }
 
-
-
-
-
-
-
-
-.changesDiv{
+.divSwitch{
     margin-top: 100px;
     font-family: Franklin Gothic Heavy;
     font-size: 20pt;
@@ -609,14 +600,9 @@ ul.scroll-menu-2x {
     text-align: center;
 
 }
-.changesDiv p{
+.divSwitch p{
     margin-top: 12px;
 }
-
-
-
-
-
 
 #loginButton {
     width: 150px;

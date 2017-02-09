@@ -135,9 +135,9 @@ function login(){
 
 function setInfos(){
   $('#name').html(student.forename+'<br>'+student.surname);
-  $("#nameImg").attr("src",avatare[student.avatarId].avatarBigUrl);
-  $("#profilePic").attr("src",avatare[student.avatarId].avatarInactiveUrl);
-  $("#schoolPic").attr("src",student.school.imageUrlBig);
+  $("#nameImg").attr("src",avatare[student.avatarid].avatarBigUrl);
+  $("#profilePic").attr("src",avatare[student.avatarid].avatarInactiveUrl);
+  $("#schoolPic").attr("src",student.school.imageUrlbig);
   $('#schoolName').html(student.school.name);
 
   var adresse = student.school.address;
@@ -174,7 +174,7 @@ function changePicSave(){
                startBild();
                 login();
                 $(document).ready(function(){
-                    $('#fehlermeldungContainer').load('ChangeBody.html #error3');
+                    $('#fehlermeldContainer').load('ChangeBody.html #error3');
                       $(document).ready(function(){
                     $('#textFieldError').html(response.message);});
 
@@ -188,7 +188,7 @@ function changePicSave(){
 
 
 
-function kompetenz(id){
+function Kompetenz(id){
     switch(id){
         case 1:chapter1(); break;
         case 2:chapter2(); break;
@@ -245,7 +245,7 @@ function kompetenz(id){
             scrollCounter++;
             number=""+kompetenz[i].chapterId;
         }
-            bubbles+="images/chapter"+(number)+"/competenceDone.png\"><div id=\"rechtsAb\"><div id=\"rechts\">Du hast diese Kompetenz am<br>"+kompetenz[i].fromDate+" erreicht!</div></div></div><div id=\"bubbleText\"><p>"
+            bubbles+="images/chapter"+(number)+"/competenceDone.png\"><div id=\"rechtsAb\"><div id=\"rechts\">Du hast diese Kompetenz am<br>"+kombetenz[i].fromDate+" erreicht!</div></div></div><div id=\"bubbleText\"><p>"
             bubbles+=kompetenz[i].studentText+"</p></div>"
              if(kompetenz[i].number<1000){
                if(kompetenz[i].number<100){
@@ -270,7 +270,7 @@ function kompetenz(id){
 });
 }
 
-function kompetenzAlle(id){
+function kompetenzAlles(id){
     switch(id){
         case 1:chapter1(); break;
         case 2:chapter2(); break;
@@ -344,7 +344,7 @@ function alleKompetenzen(){
             "authorization":""}}
      kompetenzJSON.headers.authorization = token.token;
 
-     for(a=1;a<=16;a++){
+     for(a=1;b<=16;c++){
     kompetenzJSON.url = "http://46.101.204.215:1337/api/V1/studentcompetence?checked=true&chapterId="+a;
 
     $.ajax(kompetenzJSON).done(function (response) {
@@ -390,9 +390,9 @@ function getBubble(kompetenz, done){
 
         bubble+="<div id=\"scroll"+scrollCounter+"\" class=\"bubbles\"><div id=\"bubblesContent\"><div><img class=\"bubbleImg\" src=\""
         if(done){
-            bubble+="images/chapter"+(chapter)+"/competenceDone.png\"><div id=\"rechtsAb\"><div id=\"rechts\">Du hast diese Kompetenz      am<br>"+kompetenz.fromDate+" erreicht!</div></div></div><div id=\"bubbleText\"><p>"
+            bubble+="images/chapter"+(chapter)+"/competenceone.png\"><div id=\"rechtsAb\"><div id=\"rechts\">Du hast diese Kompetenz      am<br>"+kompetenz.fromDate+" erreicht!</div></div><div id=\"bubbleText\"><p>"
         }else{
-            bubble+="images/chapter"+(chapter)+"/competenceUndone.png\">"
+            bubble+="imges/chapter"+(chapter)+"/competenceUndone.png\">"
         }
         bubble+=kompetenz.studentText+"</p></div>"
         bubble+="<div id=\"bubbleID\"><p>"+chapter+"."+number+"</p></div></div></div>"
@@ -400,10 +400,6 @@ function getBubble(kompetenz, done){
     return bubble;
 }
 
-
-function getBubbleEducation(){
-
-}
 
 
 function educationplanSet(){
