@@ -104,7 +104,7 @@ function login(){
     //JSON um den Student zu bekommen
     var studentJSON = {
         "async": false,
-        "url": "http://46.101.204.215:1337/api/V1/student",
+        "url": "http://46.101.214.215:1337/api/V1/student",
         "method": "GET",
         "headers": {
             "authorization":""}}
@@ -112,7 +112,7 @@ function login(){
     //JSON Avatare
     var avatareJSON = {
         "async": false,
-        "url": "http://46.101.204.215:1337/api/V1/avatar",
+        "url": "http://46.101.214.215:1337/api/V1/avatar",
         "method": "GET",
         "headers": {
             "authorization":""}}
@@ -168,22 +168,16 @@ function changePicSave(){
         "headers": {
             "authorization":""}}
     changePicJSON.headers.authorization = token.token;
-    changePicJSON.url = "http://46.101.204.215:1337/api/V1/avatar/"+picChange;
-    $.ajax(changePicJSON).done(function (response) {
+    changePicJSON.url = "http://46.101.214.215:1337/api/V1/avatar/"+picChange;
+   (changePicJSON).done(function (response) {
         if(response.message ="Avatar wurde erfolgreich geändert"){
                startBild();
                 login();
                 $(document).ready(function(){
                     $('#fehlermeldContainer').load('ChangeBody.html #error3');
-                      $(document).ready(function(){
-                    $('#textFieldError').html(response.message);});
-
                 });
-
         }
     });
-
-
 };
 
 
@@ -233,7 +227,7 @@ function Kompetenz(id){
 
 
 
-    /*
+
     var bubbles="";
     var number="";
     for(i=0;i<kompetenz.length;i++){
@@ -260,10 +254,10 @@ function Kompetenz(id){
            }else{
                numberID=kompetenz[i].number;
            }
-            bubbles+="<div id=\"bubbleID\"><p>"+number+"."+numberID+"</p></div></div></div>"
+            bubbles+="<div id=\"bubbleID\"><p>"+number+"."+numberID+"</p></div></div>"
 
     }
-        */
+
     $(document).ready(function(){
    $('#middleContent').html(bubbles);
         hoverBubbles();
@@ -299,7 +293,7 @@ scrollTop();
             "authorization":""}}
 
      kompetenzJSON.headers.authorization = token.token;
-     kompetenzJSON.url = "http://46.101.204.215:1337/api/V1/studentcompetence?checked=false&chapterId="+id;
+     kompetenzJSON.url = "http://46.101.214.215:1337/api/V1/studentcompetence?checked=false&chapterId="+id;
    var  kompetenz={};
     $.ajax(kompetenzJSON).done(function (response) {
         kompetenz=response;
@@ -363,44 +357,6 @@ function alleKompetenzen(){
         hoverBubbles();
 });
 }
-
-
-function getBubble(kompetenz, done){
-
-    var bubble="";
-    var number="";
-    var chapter="";
-    scrollCounter++;
-    if(kompetenz.number<1000){
-               if(kompetenz.number<100){
-                   if(kompetenz.number<10){
-                       number="000"+kompetenz.number;
-                   }else{
-                       number="00"+kompetenz.number;
-                   }
-               }else{
-                    number="0"+kompetenz.number;
-               }
-           }else{
-               number=kompetenz.number;
-           }
-
-    (kompetenz.chapterId<10)?(chapter="0"+kompetenz.chapterId):(chapter=""+kompetenz.chapterId);
-
-
-        bubble+="<div id=\"scroll"+scrollCounter+"\" class=\"bubbles\"><div id=\"bubblesContent\"><div><img class=\"bubbleImg\" src=\""
-        if(done){
-            bubble+="images/chapter"+(chapter)+"/competenceone.png\"><div id=\"rechtsAb\"><div id=\"rechts\">Du hast diese Kompetenz      am<br>"+kompetenz.fromDate+" erreicht!</div></div><div id=\"bubbleText\"><p>"
-        }else{
-            bubble+="imges/chapter"+(chapter)+"/competenceUndone.png\">"
-        }
-        bubble+=kompetenz.studentText+"</p></div>"
-        bubble+="<div id=\"bubbleID\"><p>"+chapter+"."+number+"</p></div></div></div>"
-
-    return bubble;
-}
-
-
 
 function educationplanSet(){
     var string="";

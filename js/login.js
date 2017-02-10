@@ -3,8 +3,8 @@ function loginButton(){
    if($("#emailinput").val()!=""&&$("#passwordinput").val()!=""){
 
         var form = new FormData();
-        form.append("username", $("#emailinput").val());
-        form.append("password", $("#passwordinput").val());
+        form.append("username", $("#emailinput"));
+        form.append("password", $("#passwordinput"));
 
         var settings = {
             "url": "http://46.101.204.215:1337/api/V1/login",
@@ -21,11 +21,10 @@ function loginButton(){
                 localStorage.setItem('token', response);})
         .fail(function(){
            $('#fehlermeldungContainer').load('ChangeBody.html #error1');
-                $(document).ready(function(){
-                    $(document).ready(function(){
+
                          $(document).ready(function(){
                         $('#textFieldError').html("Benutzername oder Passwort falsch!");
-                        });});});
+                        });
         })
         ;
    }else{
