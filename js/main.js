@@ -288,7 +288,7 @@ scrollTop();
     var kompetenzJSON = {
         "async": false,
         "url": "",
-        "method": "GET",
+        "method": "POST",
         "headers": {
             "authorization":""}}
 
@@ -305,7 +305,7 @@ scrollTop();
 
 
      for(i=0;i<kompetenz.length;i++){
-        if(false){
+        if(true){
             bubblesEducation+=getBubbleEducation();
         }else
             if(kompetenz[i].checked){
@@ -327,8 +327,6 @@ function alleKompetenzen(){
     bindButtons();
     scrollTop();
     var bubbles="";
-    var number="";
-    var numberID="";
      var  kompetenz={};
     var kompetenzJSON = {
         "async": false,
@@ -344,12 +342,6 @@ function alleKompetenzen(){
     $.ajax(kompetenzJSON).done(function (response) {
         kompetenz=response;
     });
-
-
-    for(i=0;i<kompetenz.length;i++){
-              bubbles+=getBubble(kompetenz[i],true);
-
-    }
 
 }
     $(document).ready(function(){
@@ -372,7 +364,7 @@ function educationplanSet(){
     });
     if(educationplan.length-1>0){
     for(i=0;i<(educationplan.length-1);i++){
-            string+="<li ><a href=\"#\" onclick=\"educationplanContent("+educationplan[i]._id+")\">"+educationplan[i].name+"</a></li>";
+            string+="<li ><a href=\"#\" onclick=\"+educationplan[i]._id+")\">"+educationplan[i].name+"</a></li>";
         }
        string+="<li class=\"lastListItem\"><a href=\"#\" onclick=\"educationplanContent("+educationplan[i]._id+")\">"+educationplan[i].name+"</a></li>";
     }
